@@ -1,0 +1,32 @@
+%btn {
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+$white: #fff;
+$black: #121212;
+$blue: #068ed9;
+$dark-blue: #02001e;
+$dark-gray: #828282;
+$med-gray: #c8c8c8;
+
+%btn-trans {
+  background: rgba(255, 255, 255, 0.01);
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  backdrop-filter: blur(9px);
+  border-radius: 12px;
+}
+
+%trans {
+  transition: all 0.3s;
+}
+
+%with-hover {
+  @extend %trans;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

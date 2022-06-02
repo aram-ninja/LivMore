@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Paralucent';
+  src: url('../fonts/Paralucent-Bold.woff2') format('woff2'),
+    url('../fonts/Paralucent-Bold.woff') format('woff');
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Paralucent';
+  src: url('../fonts/Paralucent-Medium.woff2') format('woff2'),
+    url('../fonts/Paralucent-Medium.woff') format('woff');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Paralucent';
+  src: url('../fonts/Paralucent-Light.woff2') format('woff2'),
+    url('../fonts/Paralucent-Light.woff') format('woff');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FF Tisa Pro';
+  src: url('../fonts/FFTisaPro-Light.woff2') format('woff2'),
+    url('../fonts/FFTisaPro-Light.woff') format('woff');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
