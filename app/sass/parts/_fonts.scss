@@ -1,33 +1,60 @@
 @font-face {
-  font-family: 'Paralucent';
-  src: url('../fonts/Paralucent-Bold.woff2') format('woff2'),
-    url('../fonts/Paralucent-Bold.woff') format('woff');
+  font-family: 'TiemposHeadline-Black';
+  src: url('../fonts/TiemposHeadline-Black.woff2') format('woff2'),
+    url('../fonts/TiemposHeadline-Black.woff') format('woff');
   font-display: swap;
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Paralucent';
-  src: url('../fonts/Paralucent-Medium.woff2') format('woff2'),
-    url('../fonts/Paralucent-Medium.woff') format('woff');
+  font-family: 'TiemposHeadline-Medium';
+  src: url('../fonts/TiemposHeadline-Medium.woff2') format('woff2'),
+    url('../fonts/TiemposHeadline-Medium.woff') format('woff');
   font-display: swap;
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Paralucent';
-  src: url('../fonts/Paralucent-Light.woff2') format('woff2'),
-    url('../fonts/Paralucent-Light.woff') format('woff');
+  font-family: 'PaTiemposHeadline-Lightt';
+  src: url('../fonts/TiemposHeadline-Light.woff2') format('woff2'),
+    url('../fonts/TiemposHeadline-Light.woff') format('woff');
   font-display: swap;
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'FF Tisa Pro';
-  src: url('../fonts/FFTisaPro-Light.woff2') format('woff2'),
-    url('../fonts/FFTisaPro-Light.woff') format('woff');
+  font-family: 'TiemposText-Bold';
+  src: url('../fonts/TiemposText-Bold.woff2') format('woff2'),
+    url('../fonts/TiemposText-Bold.woff') format('woff');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TiemposText-Regular';
+  src: url('../fonts/TiemposText-Regular.woff2') format('woff2'),
+    url('../fonts/TiemposText-Regular.woff') format('woff');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TiemposText-BoldItalic';
+  src: url('../fonts/TiemposText-BoldItalic.woff2') format('woff2'),
+    url('../fonts/TiemposText-BoldItalic.woff') format('woff');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TiemposText-Italic';
+  src: url('../fonts/TiemposText-Italic.woff2') format('woff2'),
+    url('../fonts/TiemposText-Italic.woff') format('woff');
   font-display: swap;
   font-weight: 400;
   font-style: normal;

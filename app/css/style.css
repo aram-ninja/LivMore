@@ -1,0 +1,387 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  line-height: 1;
+  -webkit-text-size-adjust: none; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input, button {
+  outline: 0;
+  border: 0; }
+
+button {
+  background-color: transparent; }
+
+:focus {
+  outline: none; }
+
+::-moz-focus-inner {
+  border: 0; }
+
+a {
+  text-decoration: none; }
+
+textarea {
+  resize: none; }
+
+input, textarea, button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-progress-appearance: unset;
+  border-radius: 0; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: bold; }
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input[type="number"] {
+  -moz-appearance: textfield; }
+
+.btn-wrapp .btn-blue {
+  text-decoration: none;
+  border: none;
+  outline: none; }
+
+.btn-wrapp .btn-blue, .with-hover {
+  transition: all 0.3s; }
+
+.btn-wrapp .btn-blue:hover, .with-hover:hover {
+  opacity: 0.8; }
+
+@font-face {
+  font-family: 'TiemposHeadline-Black';
+  src: url("../fonts/TiemposHeadline-Black.woff2") format("woff2"), url("../fonts/TiemposHeadline-Black.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'TiemposHeadline-Medium';
+  src: url("../fonts/TiemposHeadline-Medium.woff2") format("woff2"), url("../fonts/TiemposHeadline-Medium.woff") format("woff");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PaTiemposHeadline-Lightt';
+  src: url("../fonts/TiemposHeadline-Light.woff2") format("woff2"), url("../fonts/TiemposHeadline-Light.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'TiemposText-Bold';
+  src: url("../fonts/TiemposText-Bold.woff2") format("woff2"), url("../fonts/TiemposText-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'TiemposText-Regular';
+  src: url("../fonts/TiemposText-Regular.woff2") format("woff2"), url("../fonts/TiemposText-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'TiemposText-BoldItalic';
+  src: url("../fonts/TiemposText-BoldItalic.woff2") format("woff2"), url("../fonts/TiemposText-BoldItalic.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'TiemposText-Italic';
+  src: url("../fonts/TiemposText-Italic.woff2") format("woff2"), url("../fonts/TiemposText-Italic.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  line-height: 1;
+  -webkit-text-size-adjust: none; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input, button {
+  outline: 0;
+  border: 0; }
+
+button {
+  background-color: transparent; }
+
+:focus {
+  outline: none; }
+
+::-moz-focus-inner {
+  border: 0; }
+
+a {
+  text-decoration: none; }
+
+textarea {
+  resize: none; }
+
+input, textarea, button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-progress-appearance: unset;
+  border-radius: 0; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: bold; }
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+.glossary-left .alfa,
+.glossary-left .paragraf {
+  scrollbar-width: none; }
+
+body::-webkit-scrollbar,
+.glossary-left .alfa::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: -moz-scrollbars-none; }
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+h1,
+.h1 {
+  font-family: 'Paralucent', sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 47px;
+  letter-spacing: 0.02em; }
+
+body.is_safari.osx h1,
+body.is_safari.osx .h1 {
+  font-family: 'Paralucent', sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase; }
+
+h2,
+.h2 {
+  font-family: 'Paralucent', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase; }
+
+h3,
+.h3 {
+  font-family: 'Paralucent', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.03em;
+  color: #21384f; }
+
+.btn-wrapp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100%; }
+  .btn-wrapp .btn-blue {
+    height: 64px;
+    width: 48%;
+    display: flex;
+    align-items: center;
+    background-color: #068ed9;
+    justify-content: center;
+    line-height: 1.4;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 12px; }
+
+input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-right: 10px; }
+  input[type='checkbox']:checked {
+    background-image: url("../../images/checkbox.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+
+form input.error {
+  color: #cc0000 !important; }
+  form input.error::placeholder {
+    color: #cc0000 !important;
+    opacity: 1 !important; }
+
+@media all and (min-width: 998px) {
+  .show_mobile {
+    display: none !important; } }
+
+@media all and (max-width: 998px) {
+  .hide_mobile {
+    display: none !important; } }
+
+#page.opened,
+#footer.opened {
+  display: none; }
+
+.flex {
+  display: flex; }
+
+.iflex {
+  display: inline-flex; }
+
+.fac {
+  align-items: center; }
+
+.fae {
+  align-items: flex-end; }
+
+.fas {
+  align-items: flex-start; }
+
+.fjb {
+  justify-content: space-between; }
+
+.fja {
+  justify-content: space-around; }
+
+.fjc {
+  justify-content: center; }
+
+.fje {
+  justify-content: flex-end; }
+
+.fdc {
+  flex-direction: column; }
+
+.fdc-reverse {
+  flex-direction: column-reverse; }
+
+.fdr {
+  flex-direction: row; }
+
+.fdr-reverse {
+  flex-direction: row-reverse; }
+
+.fwrap {
+  flex-wrap: wrap; }
+
+.trans {
+  transition: all 0.3s; }
+
+.ttu {
+  text-transform: uppercase; }
+
+.tac {
+  text-align: center; }
+
+.tar {
+  text-align: right; }
+
+.rel {
+  position: relative; }
+
+.abs {
+  position: absolute; }
+
+.transparent {
+  opacity: 0; }
+
+.hidden {
+  display: none; }
+
+.nodrag {
+  pointer-events: none; }
+
+.fullw {
+  width: 100%; }
+
+img {
+  width: 100%; }
+
+.bold {
+  font-weight: bold; }
+
+.italic {
+  font-style: italic; }
+
+a {
+  color: inherit; }
+
+/* components imports */
