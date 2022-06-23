@@ -107,6 +107,7 @@ section {
 }
 
 body {
+  background-color: #000;
   line-height: 1;
   -webkit-text-size-adjust: none;
 }
@@ -197,9 +198,7 @@ body::-webkit-scrollbar,
 }
 
 .container {
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 0 0 73px;
 }
 
 h1,
@@ -210,36 +209,51 @@ h1,
   line-height: 47px;
   letter-spacing: 0.02em;
 }
-body.is_safari.osx {
-  h1,
-  .h1 {
-    font-family: 'Paralucent', sans-serif;
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 47px;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-  }
-}
 
 h2,
 .h2 {
-  font-family: 'Paralucent', sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
+  font-family: 'TiemposHeadline-Medium';
+  font-weight: 500;
+  font-size: 61px;
+  line-height: 67px;
+  color: #fff;
 }
 
 h3,
 .h3 {
-  font-family: 'Paralucent', sans-serif;
+  font-family: 'TiemposHeadline-Medium';
   font-weight: 500;
   font-size: 24px;
-  line-height: 34px;
-  letter-spacing: -0.03em;
-  color: #21384f;
+  line-height: 27px;
+  color: #fff;
+}
+
+h4,
+.h4 {
+  font-family: 'TiemposHeadline-Medium';
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 33px;
+  color: #fff;
+}
+
+h5,
+.h5 {
+  font-family: 'PaTiemposHeadline-Light';
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+p {
+  font-family: 'TiemposText-Regular';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #fff;
 }
 
 .btn-wrapp {

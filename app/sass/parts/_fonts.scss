@@ -12,15 +12,24 @@
     url('../fonts/TiemposHeadline-Medium.woff') format('woff');
   font-display: swap;
   font-weight: 500;
-  font-style: normal;
+  font-style: medium;
 }
 
 @font-face {
-  font-family: 'PaTiemposHeadline-Lightt';
+  font-family: 'TiemposHeadline-Light';
   src: url('../fonts/TiemposHeadline-Light.woff2') format('woff2'),
     url('../fonts/TiemposHeadline-Light.woff') format('woff');
   font-display: swap;
-  font-weight: 400;
+  font-weight: 300;
+  font-style: medium;
+}
+
+@font-face {
+  font-family: 'PaTiemposHeadline-Light';
+  src: url('../fonts/TiemposHeadline-Light.woff2') format('woff2'),
+    url('../fonts/TiemposHeadline-Light.woff') format('woff');
+  font-display: swap;
+  font-weight: 300;
   font-style: normal;
 }
 
