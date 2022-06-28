@@ -419,12 +419,11 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 27px 28px 31px;
+    padding: 27px 34px 31px 28px;
     border-bottom: 1px solid #5e5e5e; }
     @media (max-width: 768px) {
       .header nav .nav-cont {
         justify-content: inherit;
-        border-bottom: 0;
         padding: 20px; } }
     .header nav .nav-cont .header-left .burger {
       display: flex;
@@ -434,7 +433,7 @@ a {
       cursor: pointer;
       width: 30px;
       height: 30px;
-      transition: 0.3s;
+      transition: 0.3s ease-in-out;
       border: 1px solid #000; }
       .header nav .nav-cont .header-left .burger .bar1,
       .header nav .nav-cont .header-left .burger .bar2,
@@ -445,18 +444,6 @@ a {
         transition: all 0.4s; }
       .header nav .nav-cont .header-left .burger .bar3 {
         margin-bottom: 0; }
-      .header nav .nav-cont .header-left .burger.change .bar1 {
-        transform: rotate(-45deg) translate(0px, 2px); }
-      .header nav .nav-cont .header-left .burger.change .bar2 {
-        opacity: 0; }
-      .header nav .nav-cont .header-left .burger.change .bar3 {
-        margin-bottom: 0;
-        transform: rotate(45deg) translate(-1px, -3px); }
-    .header nav .nav-cont .header-left .change .bar1,
-    .header nav .nav-cont .header-left .change .bar2,
-    .header nav .nav-cont .header-left .change .bar3 {
-      border-bottom: 2px solid #fff;
-      margin-bottom: 0; }
     @media (max-width: 768px) {
       .header nav .nav-cont .header-center {
         display: block;
@@ -648,77 +635,72 @@ footer .footer p {
       letter-spacing: inherit;
       text-align: center; } }
 
-.mobile-version {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: flex-start;
-  padding: 55px 0 0 73px;
-  max-width: 444px; }
-  .mobile-version .burger {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    transition: 0.3s;
-    border: 1px solid #000;
-    margin-bottom: 50px; }
-    .mobile-version .burger .bar1,
-    .mobile-version .burger .bar2,
-    .mobile-version .burger .bar3 {
-      width: 30px;
-      border-bottom: 2px solid #ffffff;
-      margin-bottom: 8px;
-      transition: all 0.4s; }
-    .mobile-version .burger.change .bar1 {
-      transform: rotate(-45deg) translate(-10px, 10px); }
-    .mobile-version .burger.change .bar2 {
-      opacity: 0; }
-    .mobile-version .burger.change .bar3 {
-      transform: rotate(45deg) translate(-4px, -5px); }
-  .mobile-version .change .bar1,
-  .mobile-version .change .bar2,
-  .mobile-version .change .bar3 {
-    border-bottom: 2px solid #fff; }
-  .mobile-version .nav-wrap nav > ul {
+.menu_wrapper {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5); }
+  .menu_wrapper .inner_wrapper {
+    padding: 55px 0 158px 73px;
+    width: 444px;
+    margin-left: -444px;
+    height: 100%;
+    background: black;
     display: flex;
     flex-direction: column;
-    margin-bottom: 137px; }
-    .mobile-version .nav-wrap nav > ul > li {
-      margin-bottom: 27px; }
-      .mobile-version .nav-wrap nav > ul > li:last-child {
-        margin-bottom: 0; }
-      .mobile-version .nav-wrap nav > ul > li > a {
-        font-family: 'TiemposText-Regular';
-        font-size: 22px;
-        line-height: 22px;
-        color: #fff;
-        transition: 0.3s; }
-    .mobile-version .nav-wrap nav > ul .has-submenu {
+    border-right: 1px solid grey;
+    color: white; }
+    @media all and (max-width: 450px) {
+      .menu_wrapper .inner_wrapper {
+        width: 100%;
+        margin-left: -100%; } }
+    .menu_wrapper .inner_wrapper button {
+      padding: 0;
+      margin-bottom: 54px; }
+      .menu_wrapper .inner_wrapper button img {
+        max-width: 27px;
+        display: flex; }
+    .menu_wrapper .inner_wrapper > ul {
       display: flex;
-      flex-direction: column; }
-      .mobile-version .nav-wrap nav > ul .has-submenu .submenu {
-        margin-top: 27px; }
-        .mobile-version .nav-wrap nav > ul .has-submenu .submenu li {
-          margin-bottom: 12px; }
-          .mobile-version .nav-wrap nav > ul .has-submenu .submenu li:last-child {
-            margin-bottom: 0; }
-          .mobile-version .nav-wrap nav > ul .has-submenu .submenu li a {
-            font-family: 'TiemposText-Regular';
-            font-size: 14px;
-            line-height: 20px;
-            letter-spacing: 0.02em;
-            color: #fff; }
-  .mobile-version .nav-wrap .for-mobile {
-    margin-bottom: 158px; }
-    .mobile-version .nav-wrap .for-mobile .logo {
-      max-width: 100px;
+      flex-direction: column;
+      margin-bottom: 137px; }
+      .menu_wrapper .inner_wrapper > ul li {
+        margin-bottom: 27px; }
+        .menu_wrapper .inner_wrapper > ul li:last-child {
+          margin-bottom: 0; }
+        .menu_wrapper .inner_wrapper > ul li a {
+          font-family: 'TiemposText-Regular';
+          font-size: 22px;
+          line-height: 22px;
+          color: #fff; }
+      .menu_wrapper .inner_wrapper > ul .has-submenu {
+        display: flex;
+        flex-direction: column; }
+        .menu_wrapper .inner_wrapper > ul .has-submenu .submenu {
+          margin-top: 27px;
+          display: block; }
+          .menu_wrapper .inner_wrapper > ul .has-submenu .submenu li {
+            margin-bottom: 12px; }
+            .menu_wrapper .inner_wrapper > ul .has-submenu .submenu li:last-child {
+              margin-bottom: 0; }
+            .menu_wrapper .inner_wrapper > ul .has-submenu .submenu li a {
+              font-family: 'TiemposText-Regular';
+              font-size: 14px;
+              line-height: 20px;
+              letter-spacing: 0.02em;
+              color: #fff; }
+    .menu_wrapper .inner_wrapper .header-footer .logo {
       margin-bottom: 32px; }
-    .mobile-version .nav-wrap .for-mobile p {
-      line-height: 20px; }
+      .menu_wrapper .inner_wrapper .header-footer .logo a img {
+        max-width: 100px;
+        display: flex; }
 
 .shop .container {
   padding: 0 122px; }
@@ -734,19 +716,19 @@ footer .footer p {
     align-items: center;
     justify-content: center;
     max-width: 1346px;
+    height: 100%;
     margin: 0 auto 83px; }
+    @media (max-width: 992px) {
+      .shop .container nav .shop-nav {
+        margin: 0 auto 61px; } }
+    @media (max-width: 768px) {
+      .shop .container nav .shop-nav {
+        max-width: 310px; } }
     .shop .container nav .shop-nav ul {
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-wrap: wrap;
-      height: 44px; }
-      @media (max-width: 992px) {
-        .shop .container nav .shop-nav ul {
-          max-width: 325px;
-          height: 100%;
-          align-items: baseline;
-          margin: 0 auto 46px; } }
+      flex-wrap: wrap; }
       .shop .container nav .shop-nav ul li {
         margin-right: 32px;
         display: flex;
@@ -755,10 +737,15 @@ footer .footer p {
         @media (max-width: 992px) {
           .shop .container nav .shop-nav ul li {
             margin-right: 15px;
-            margin-bottom: 15px;
-            width: fit-content; }
-            .shop .container nav .shop-nav ul li:nth-child(3) {
-              margin-right: 0; } }
+            width: fit-content; } }
+        @media (max-width: 768px) {
+          .shop .container nav .shop-nav ul li {
+            margin-right: 15px;
+            margin-bottom: 15px; }
+            .shop .container nav .shop-nav ul li:nth-child(3n) {
+              margin-right: 0; }
+            .shop .container nav .shop-nav ul li:nth-child(n + 3):nth-last-child(-n + 2) {
+              margin-bottom: 0; } }
         .shop .container nav .shop-nav ul li:last-child {
           margin-right: 0; }
         .shop .container nav .shop-nav ul li a {
@@ -788,9 +775,20 @@ footer .footer p {
       height: 17px;
       margin-left: 32px;
       margin-right: 32px; }
+      @media (max-width: 768px) {
+        .shop .container nav .shop-nav img {
+          margin-right: 15px;
+          margin-left: 15px; } }
+    .shop .container nav .shop-nav .left-img {
+      margin-left: 0; }
+    .shop .container nav .shop-nav .right-img {
+      margin-right: 0; }
   .shop .container nav .all-items {
     max-width: 1676px;
     margin: 0 auto; }
+    @media (max-width: 992px) {
+      .shop .container nav .all-items {
+        margin-bottom: 72px; } }
     .shop .container nav .all-items .shop-all,
     .shop .container nav .all-items .gift-packs,
     .shop .container nav .all-items .gummies,
@@ -816,7 +814,8 @@ footer .footer p {
       .shop .container nav .all-items .vapes .item {
         margin-right: 60px;
         margin-bottom: 110px;
-        width: calc(25% - 45px); }
+        width: calc(25% - 45px);
+        transition: 0.3s; }
         @media (max-width: 992px) {
           .shop .container nav .all-items .shop-all .item,
           .shop .container nav .all-items .gift-packs .item,
@@ -894,28 +893,38 @@ footer .footer p {
         .shop .container nav .all-items .cream .item .item-info,
         .shop .container nav .all-items .vapes .item .item-info {
           text-align: center; }
-          @media (max-width: 992px) {
-            .shop .container nav .all-items .shop-all .item .item-info a h6,
-            .shop .container nav .all-items .gift-packs .item .item-info a h6,
-            .shop .container nav .all-items .gummies .item .item-info a h6,
-            .shop .container nav .all-items .pre-rolls .item .item-info a h6,
-            .shop .container nav .all-items .tinctures .item .item-info a h6,
-            .shop .container nav .all-items .flower .item .item-info a h6,
-            .shop .container nav .all-items .cream .item .item-info a h6,
-            .shop .container nav .all-items .vapes .item .item-info a h6 {
-              font-size: 18px;
-              line-height: 22px; } }
-          @media (max-width: 768px) {
-            .shop .container nav .all-items .shop-all .item .item-info a h6,
-            .shop .container nav .all-items .gift-packs .item .item-info a h6,
-            .shop .container nav .all-items .gummies .item .item-info a h6,
-            .shop .container nav .all-items .pre-rolls .item .item-info a h6,
-            .shop .container nav .all-items .tinctures .item .item-info a h6,
-            .shop .container nav .all-items .flower .item .item-info a h6,
-            .shop .container nav .all-items .cream .item .item-info a h6,
-            .shop .container nav .all-items .vapes .item .item-info a h6 {
-              font-size: 14px;
-              line-height: 15px; } }
+          .shop .container nav .all-items .shop-all .item .item-info a h6,
+          .shop .container nav .all-items .gift-packs .item .item-info a h6,
+          .shop .container nav .all-items .gummies .item .item-info a h6,
+          .shop .container nav .all-items .pre-rolls .item .item-info a h6,
+          .shop .container nav .all-items .tinctures .item .item-info a h6,
+          .shop .container nav .all-items .flower .item .item-info a h6,
+          .shop .container nav .all-items .cream .item .item-info a h6,
+          .shop .container nav .all-items .vapes .item .item-info a h6 {
+            font-weight: 400; }
+            @media (max-width: 992px) {
+              .shop .container nav .all-items .shop-all .item .item-info a h6,
+              .shop .container nav .all-items .gift-packs .item .item-info a h6,
+              .shop .container nav .all-items .gummies .item .item-info a h6,
+              .shop .container nav .all-items .pre-rolls .item .item-info a h6,
+              .shop .container nav .all-items .tinctures .item .item-info a h6,
+              .shop .container nav .all-items .flower .item .item-info a h6,
+              .shop .container nav .all-items .cream .item .item-info a h6,
+              .shop .container nav .all-items .vapes .item .item-info a h6 {
+                font-size: 18px;
+                line-height: 22px; } }
+            @media (max-width: 768px) {
+              .shop .container nav .all-items .shop-all .item .item-info a h6,
+              .shop .container nav .all-items .gift-packs .item .item-info a h6,
+              .shop .container nav .all-items .gummies .item .item-info a h6,
+              .shop .container nav .all-items .pre-rolls .item .item-info a h6,
+              .shop .container nav .all-items .tinctures .item .item-info a h6,
+              .shop .container nav .all-items .flower .item .item-info a h6,
+              .shop .container nav .all-items .cream .item .item-info a h6,
+              .shop .container nav .all-items .vapes .item .item-info a h6 {
+                font-size: 14px;
+                line-height: 15px;
+                font-weight: 500; } }
           .shop .container nav .all-items .shop-all .item .item-info .item-info-footer,
           .shop .container nav .all-items .gift-packs .item .item-info .item-info-footer,
           .shop .container nav .all-items .gummies .item .item-info .item-info-footer,
@@ -927,7 +936,8 @@ footer .footer p {
             margin-top: 11px;
             display: flex;
             align-items: center;
-            justify-content: center; }
+            justify-content: center;
+            transition: 0.3s; }
             @media (max-width: 768px) {
               .shop .container nav .all-items .shop-all .item .item-info .item-info-footer,
               .shop .container nav .all-items .gift-packs .item .item-info .item-info-footer,
@@ -950,6 +960,7 @@ footer .footer p {
               padding-right: 8px;
               margin-right: 15px;
               font-family: 'TiemposText-Regular';
+              font-weight: 400;
               font-size: 14px;
               line-height: 20px;
               letter-spacing: 0.02em;
@@ -978,17 +989,30 @@ footer .footer p {
             .shop .container nav .all-items .vapes .item .item-info .item-info-footer p {
               transition: 0.3s;
               line-height: 20px; }
-              .shop .container nav .all-items .shop-all .item .item-info .item-info-footer p:hover,
-              .shop .container nav .all-items .gift-packs .item .item-info .item-info-footer p:hover,
-              .shop .container nav .all-items .gummies .item .item-info .item-info-footer p:hover,
-              .shop .container nav .all-items .pre-rolls .item .item-info .item-info-footer p:hover,
-              .shop .container nav .all-items .tinctures .item .item-info .item-info-footer p:hover,
-              .shop .container nav .all-items .flower .item .item-info .item-info-footer p:hover,
-              .shop .container nav .all-items .cream .item .item-info .item-info-footer p:hover,
-              .shop .container nav .all-items .vapes .item .item-info .item-info-footer p:hover {
-                font-family: 'TiemposHeadline-Medium';
-                letter-spacing: 0.045em;
-                text-decoration: underline; }
+        .shop .container nav .all-items .shop-all .item:hover .item-info .item-info-footer span,
+        .shop .container nav .all-items .gift-packs .item:hover .item-info .item-info-footer span,
+        .shop .container nav .all-items .gummies .item:hover .item-info .item-info-footer span,
+        .shop .container nav .all-items .pre-rolls .item:hover .item-info .item-info-footer span,
+        .shop .container nav .all-items .tinctures .item:hover .item-info .item-info-footer span,
+        .shop .container nav .all-items .flower .item:hover .item-info .item-info-footer span,
+        .shop .container nav .all-items .cream .item:hover .item-info .item-info-footer span,
+        .shop .container nav .all-items .vapes .item:hover .item-info .item-info-footer span {
+          font-family: 'PaTiemposHeadline-Light';
+          font-weight: 300;
+          letter-spacing: inherit; }
+        .shop .container nav .all-items .shop-all .item:hover .item-info .item-info-footer p,
+        .shop .container nav .all-items .gift-packs .item:hover .item-info .item-info-footer p,
+        .shop .container nav .all-items .gummies .item:hover .item-info .item-info-footer p,
+        .shop .container nav .all-items .pre-rolls .item:hover .item-info .item-info-footer p,
+        .shop .container nav .all-items .tinctures .item:hover .item-info .item-info-footer p,
+        .shop .container nav .all-items .flower .item:hover .item-info .item-info-footer p,
+        .shop .container nav .all-items .cream .item:hover .item-info .item-info-footer p,
+        .shop .container nav .all-items .vapes .item:hover .item-info .item-info-footer p {
+          font-family: 'TiemposHeadline-Medium';
+          font-weight: 500;
+          line-height: 15px;
+          letter-spacing: 0.045em;
+          text-decoration: underline; }
 
 @keyframes example {
   from {

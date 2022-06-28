@@ -14,20 +14,20 @@
         align-items: center;
         justify-content: center;
         max-width: 1346px;
+        height: 100%;
         margin: 0 auto 83px;
+        @media (max-width: 992px) {
+          margin: 0 auto 61px;
+        }
+        @media (max-width: 768px) {
+          max-width: 310px;
+        }
         ul {
           display: flex;
           align-items: center;
           justify-content: center;
           flex-wrap: wrap;
-          height: 44px;
 
-          @media (max-width: 992px) {
-            max-width: 325px;
-            height: 100%;
-            align-items: baseline;
-            margin: 0 auto 46px;
-          }
           li {
             margin-right: 32px;
             display: flex;
@@ -35,10 +35,16 @@
             transition: 0.7s ease-in-out;
             @media (max-width: 992px) {
               margin-right: 15px;
-              margin-bottom: 15px;
               width: fit-content;
-              &:nth-child(3) {
+            }
+            @media (max-width: 768px) {
+              margin-right: 15px;
+              margin-bottom: 15px;
+              &:nth-child(3n) {
                 margin-right: 0;
+              }
+              &:nth-child(n + 3):nth-last-child(-n + 2) {
+                margin-bottom: 0;
               }
             }
             &:last-child {
@@ -75,11 +81,24 @@
           height: 17px;
           margin-left: 32px;
           margin-right: 32px;
+          @media (max-width: 768px) {
+            margin-right: 15px;
+            margin-left: 15px;
+          }
+        }
+        .left-img {
+          margin-left: 0;
+        }
+        .right-img {
+          margin-right: 0;
         }
       }
       .all-items {
         max-width: 1676px;
         margin: 0 auto;
+        @media (max-width: 992px) {
+          margin-bottom: 72px;
+        }
         .shop-all,
         .gift-packs,
         .gummies,
@@ -99,6 +118,7 @@
             margin-right: 60px;
             margin-bottom: 110px;
             width: calc(25% - 45px);
+            transition: 0.3s;
             @media (max-width: 992px) {
               width: calc(50% - 30px);
               margin-bottom: 60px;
@@ -125,6 +145,7 @@
             .item-info {
               text-align: center;
               a h6 {
+                font-weight: 400;
                 @media (max-width: 992px) {
                   font-size: 18px;
                   line-height: 22px;
@@ -132,6 +153,7 @@
                 @media (max-width: 768px) {
                   font-size: 14px;
                   line-height: 15px;
+                  font-weight: 500;
                 }
               }
               .item-info-footer {
@@ -139,6 +161,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                transition: 0.3s;
                 @media (max-width: 768px) {
                   margin-top: 10px;
                 }
@@ -147,6 +170,7 @@
                   padding-right: 8px;
                   margin-right: 15px;
                   font-family: 'TiemposText-Regular';
+                  font-weight: 400;
                   font-size: 14px;
                   line-height: 20px;
                   letter-spacing: 0.02em;
@@ -163,12 +187,21 @@
                 p {
                   transition: 0.3s;
                   line-height: 20px;
-                  &:hover {
-                    font-family: 'TiemposHeadline-Medium';
-                    letter-spacing: 0.045em;
-                    text-decoration: underline;
-                  }
                 }
+              }
+            }
+            &:hover {
+              .item-info .item-info-footer span {
+                font-family: 'PaTiemposHeadline-Light';
+                font-weight: 300;
+                letter-spacing: inherit;
+              }
+              .item-info .item-info-footer p {
+                font-family: 'TiemposHeadline-Medium';
+                font-weight: 500;
+                line-height: 15px;
+                letter-spacing: 0.045em;
+                text-decoration: underline;
               }
             }
           }
