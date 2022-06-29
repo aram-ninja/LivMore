@@ -585,7 +585,7 @@ a {
           .about .container .about-cont .about-right .all-items .item {
             height: 137px; } }
         .about .container .about-cont .about-right .all-items .item .item-info {
-          padding: 17px 15px 14px 230px; }
+          padding: 17px 15px 16px 230px; }
           @media (max-width: 1326px) {
             .about .container .about-cont .about-right .all-items .item .item-info {
               padding: 8px 15px 0 230px; } }
@@ -957,8 +957,8 @@ footer .footer p {
             .shop .container nav .all-items .cream .item .item-info .item-info-footer span,
             .shop .container nav .all-items .vapes .item .item-info .item-info-footer span {
               position: relative;
-              padding-right: 8px;
-              margin-right: 15px;
+              padding-right: 12px;
+              margin-right: 12px;
               font-family: 'TiemposText-Regular';
               font-weight: 400;
               font-size: 14px;
@@ -1011,7 +1011,7 @@ footer .footer p {
           font-family: 'TiemposHeadline-Medium';
           font-weight: 500;
           line-height: 15px;
-          letter-spacing: 0.045em;
+          letter-spacing: 0.02em;
           text-decoration: underline; }
 
 @keyframes example {
