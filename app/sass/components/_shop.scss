@@ -161,11 +161,12 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                transition: 0.3s;
                 @media (max-width: 768px) {
                   margin-top: 10px;
                 }
-                span {
+                a span {
+                  display: inline-block;
+                  width: 51px;
                   position: relative;
                   padding-right: 12px;
                   margin-right: 12px;
@@ -175,6 +176,7 @@
                   line-height: 20px;
                   letter-spacing: 0.02em;
                   color: #ffffff;
+                  transition: 0.3s;
                   &::after {
                     content: '';
                     position: absolute;
@@ -184,24 +186,27 @@
                     background-color: #fff;
                   }
                 }
-                p {
+                a p {
+                  width: 64px;
+                  height: 20px;
                   transition: 0.3s;
                   line-height: 20px;
                 }
               }
             }
             &:hover {
-              .item-info .item-info-footer span {
+              .item-info .item-info-footer a span {
                 font-family: 'PaTiemposHeadline-Light';
                 font-weight: 300;
                 letter-spacing: inherit;
               }
-              .item-info .item-info-footer p {
+              .item-info .item-info-footer a p {
                 font-family: 'TiemposHeadline-Medium';
                 font-weight: 500;
                 line-height: 15px;
-                letter-spacing: 0.02em;
-                text-decoration: underline;
+                letter-spacing: 0.045em;
+                border-bottom: 1px solid #5e5e5e;
+                height: 15px;
               }
             }
           }

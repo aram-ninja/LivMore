@@ -1,0 +1,178 @@
+.header nav .nav-cont {
+  border-bottom: 0;
+  padding-bottom: 62px;
+}
+
+.single {
+  .container {
+    padding: 0 74px;
+    @media (max-width: 1245px) {
+      padding: 0 50px;
+    }
+    @media (max-width: 992px) {
+      padding: 0 20px;
+    }
+    nav {
+      .single-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 368px;
+        height: 100%;
+        margin-bottom: 77px;
+
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+
+          li {
+            margin-right: 19px;
+            padding-right: 19px;
+            display: flex;
+            align-items: center;
+            transition: 0.3s ease-in-out;
+            position: relative;
+            &:last-child {
+              margin-right: 0;
+              padding-right: 0;
+              &::after {
+                display: none;
+              }
+            }
+            a {
+              font-family: 'TiemposText-Regular';
+              font-size: 16px;
+              line-height: 16px;
+              color: #fff;
+              transition: 0.7s ease-in-out;
+            }
+            &::after {
+              content: '';
+              position: absolute;
+              width: 14px;
+              height: 17px;
+              background-image: url(../img/star.svg);
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;
+              right: -6px;
+            }
+          }
+          .current a {
+            font-family: 'TiemposText-Regular';
+            font-size: 16px;
+            line-height: 16px;
+            color: #fff;
+            opacity: 0.6;
+            @media (max-width: 992px) {
+              font-size: 30px;
+              line-height: 33px;
+            }
+            @media (max-width: 768px) {
+              font-size: 20px;
+              line-height: 22px;
+            }
+          }
+        }
+      }
+      .all-items {
+        max-width: 1688px;
+        margin: 0 auto;
+
+        .single,
+        .tinctures,
+        .livmor {
+          animation-name: example;
+          animation-duration: 0.8s;
+          animation-fill-mode: backwards;
+          animation-timing-function: ease-in-out;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          .single-all {
+            width: 100%;
+            margin-bottom: 104px;
+            display: flex;
+
+            .single-left {
+              .single-left-head {
+                max-width: 368px;
+                width: 100%;
+                .title {
+                  margin-bottom: 17px;
+                }
+                .single-left-info {
+                  span {
+                    font-family: 'PaTiemposHeadline-Light';
+                    font-weight: 300;
+                    font-size: 32px;
+                    line-height: 35px;
+                    color: #ffffff;
+                    display: inline-block;
+                    margin-bottom: 14px;
+                  }
+                  p {
+                    max-width: 312px;
+                    line-height: 20px;
+                    margin-bottom: 47px;
+                  }
+                }
+              }
+            }
+            .single-center {
+              background-image: url(../img/single-purple-img.svg);
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+              max-width: 766px;
+              width: 100%;
+              height: 451px;
+              position: relative;
+              .items {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                position: relative;
+                .block {
+                  position: absolute;
+                  img {
+                    display: flex;
+                    max-width: 230px;
+                    transition: 0.3s;
+                    &:hover {
+                      border: 2px solid #ffffff;
+                    }
+                  }
+                }
+                .item-1 {
+                  top: -73px;
+                  left: 140px;
+                }
+                .item-2 {
+                  top: 47px;
+                  left: 76px;
+                }
+                .item-3 {
+                  top: 292px;
+                  left: 76px;
+                }
+              }
+            }
+          }
+        }
+        @keyframes example {
+          from {
+            margin-top: 400px;
+            margin-left: 100px;
+          }
+          to {
+            margin-top: 0;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
