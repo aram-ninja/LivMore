@@ -419,7 +419,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 27px 34px 31px 28px;
+    padding: 27px 34px 32px 28px;
     border-bottom: 1px solid #5e5e5e; }
     @media (max-width: 768px) {
       .header nav .nav-cont {
@@ -559,8 +559,8 @@ footer .footer p {
         display: flex; }
 
 .header nav .nav-cont {
-  border-bottom: 0;
-  padding-bottom: 0 !important; }
+  border-bottom: 1px solid #5e5e5e;
+  padding-bottom: 32px; }
 
 @media (max-width: 992px) {
   .about .container {
@@ -569,24 +569,9 @@ footer .footer p {
 .about .container .about-cont {
   display: flex;
   padding-top: 48px;
-  padding-bottom: 19px;
-  background-image: url(../img/man-desktop-img.svg);
-  background-repeat: no-repeat;
-  background-position-x: 49%;
-  background-position-y: 45px;
-  z-index: 10;
-  height: 100%; }
-  @media (max-width: 1400px) {
-    .about .container .about-cont {
-      background-position-x: 48%; } }
-  @media (max-width: 992px) {
-    .about .container .about-cont {
-      padding-top: 96px;
-      padding-bottom: 0;
-      flex-direction: column;
-      background-image: none;
-      background-position-x: 50%;
-      background-position-y: 50%; } }
+  position: relative;
+  height: 100%;
+  min-height: 754px; }
   .about .container .about-cont .about-left {
     width: 50%;
     display: flex;
@@ -646,41 +631,51 @@ footer .footer p {
           text-align: center;
           line-height: 20px; } }
   .about .container .about-cont .about-center {
-    display: none; }
-    @media (max-width: 992px) {
-      .about .container .about-cont .about-center {
-        display: block; }
-        .about .container .about-cont .about-center img {
-          max-height: 700px;
-          display: flex;
-          object-fit: contain; } }
+    width: 445px;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    min-height: 754px;
+    max-height: 100%; }
+    .about .container .about-cont .about-center .desktop-img {
+      position: absolute;
+      right: 0;
+      left: 15px;
+      bottom: 0;
+      height: 100%;
+      min-height: 754px;
+      max-height: 100%;
+      top: 0; }
+    .about .container .about-cont .about-center .mobile-img {
+      display: none; }
   .about .container .about-cont .about-right {
+    position: relative;
     width: 50%;
-    z-index: -1; }
+    height: 100vh;
+    z-index: -1;
+    padding-bottom: 19px; }
     @media (max-width: 992px) {
       .about .container .about-cont .about-right {
         width: 100%; } }
     .about .container .about-cont .about-right .all-items {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      height: 100%; }
       .about .container .about-cont .about-right .all-items .item {
         width: 100%;
-        height: 105px;
+        height: 15%;
+        min-height: 105px;
         background-color: #c24bed; }
         @media (max-width: 992px) {
           .about .container .about-cont .about-right .all-items .item {
             height: 137px; } }
         .about .container .about-cont .about-right .all-items .item .item-info {
-          padding: 17px 15px 14px 230px;
+          padding: 17px 15px 16px 30%;
           height: 100%; }
-          @media (max-width: 1326px) {
-            .about .container .about-cont .about-right .all-items .item .item-info {
-              padding: 8px 15px 0 230px; } }
-          @media (max-width: 992px) {
-            .about .container .about-cont .about-right .all-items .item .item-info {
-              padding: 22px 0;
-              text-align: center; } }
-          @media (max-width: 1145px) {
+          @media (max-width: 1365px) {
             .about .container .about-cont .about-right .all-items .item .item-info h3 {
               font-size: 20px;
               line-height: 22px; } }
@@ -689,7 +684,7 @@ footer .footer p {
               margin-bottom: 5px; } }
           .about .container .about-cont .about-right .all-items .item .item-info p {
             line-height: 20px; }
-            @media (max-width: 1326px) {
+            @media (max-width: 1365px) {
               .about .container .about-cont .about-right .all-items .item .item-info p {
                 max-width: 280px; } }
             @media (max-width: 992px) {
@@ -704,7 +699,7 @@ footer .footer p {
             letter-spacing: 0.02em;
             color: #fff;
             text-transform: uppercase; }
-            @media (max-width: 1145px) {
+            @media (max-width: 1365px) {
               .about .container .about-cont .about-right .all-items .item .item-info span {
                 font-size: 16px;
                 line-height: 22px; } }
@@ -1191,10 +1186,6 @@ footer .footer {
               .footer .footer-cont .footer-down-info ul li p {
                 font-size: 12px;
                 line-height: 17px; } }
-
-.header nav .nav-cont {
-  border-bottom: 0;
-  padding-bottom: 62px; }
 
 .single .container {
   padding: 0 74px; }
