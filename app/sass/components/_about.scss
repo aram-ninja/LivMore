@@ -1,3 +1,7 @@
+.header nav .nav-cont {
+  border-bottom: 0;
+  padding-bottom: 0 !important;
+}
 .about {
   .container {
     @media (max-width: 992px) {
@@ -31,9 +35,13 @@
         flex-direction: column;
         @media (max-width: 992px) {
           width: 100%;
-          max-width: 335px;
+          max-width: 100%;
+          padding: 0 20px;
           margin: 0 auto;
           text-align: center;
+        }
+        @media (max-width: 375px) {
+          max-width: 335px;
         }
 
         .title {
@@ -93,7 +101,7 @@
           img {
             max-height: 700px;
             display: flex;
-            object-fit: cover;
+            object-fit: contain;
           }
         }
       }

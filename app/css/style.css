@@ -103,7 +103,7 @@ input[type="number"] {
   font-style: medium; }
 
 @font-face {
-  font-family: 'PaTiemposHeadline-Light';
+  font-family: 'TiemposHeadline-Light';
   src: url("../fonts/TiemposHeadline-Light.woff2") format("woff2"), url("../fonts/TiemposHeadline-Light.woff") format("woff");
   font-display: swap;
   font-weight: 300;
@@ -558,6 +558,10 @@ footer .footer p {
         max-width: 100px;
         display: flex; }
 
+.header nav .nav-cont {
+  border-bottom: 0;
+  padding-bottom: 0 !important; }
+
 @media (max-width: 992px) {
   .about .container {
     padding: 0; } }
@@ -590,9 +594,13 @@ footer .footer p {
     @media (max-width: 992px) {
       .about .container .about-cont .about-left {
         width: 100%;
-        max-width: 335px;
+        max-width: 100%;
+        padding: 0 20px;
         margin: 0 auto;
         text-align: center; } }
+    @media (max-width: 375px) {
+      .about .container .about-cont .about-left {
+        max-width: 335px; } }
     .about .container .about-cont .about-left .title {
       margin-bottom: 28px; }
       @media (max-width: 768px) {
@@ -645,7 +653,7 @@ footer .footer p {
         .about .container .about-cont .about-center img {
           max-height: 700px;
           display: flex;
-          object-fit: cover; } }
+          object-fit: contain; } }
   .about .container .about-cont .about-right {
     width: 50%;
     z-index: -1; }
@@ -1003,7 +1011,7 @@ footer .footer {
         .shop .container nav .all-items .flower .item:hover .item-info .item-info-footer a span,
         .shop .container nav .all-items .cream .item:hover .item-info .item-info-footer a span,
         .shop .container nav .all-items .vapes .item:hover .item-info .item-info-footer a span {
-          font-family: 'PaTiemposHeadline-Light';
+          font-family: 'TiemposHeadline-Light';
           font-weight: 300;
           letter-spacing: inherit; }
         .shop .container nav .all-items .shop-all .item:hover .item-info .item-info-footer a p,
@@ -1251,15 +1259,11 @@ footer .footer {
             font-size: 20px;
             line-height: 22px; } }
   .single .container nav .all-items {
-    max-width: 1688px;
+    max-width: 1772px;
     margin: 0 auto; }
     .single .container nav .all-items .single,
     .single .container nav .all-items .tinctures,
     .single .container nav .all-items .livmor {
-      animation-name: example;
-      animation-duration: 0.8s;
-      animation-fill-mode: backwards;
-      animation-timing-function: ease-in-out;
       display: flex;
       align-items: center;
       flex-wrap: wrap; }
@@ -1294,53 +1298,254 @@ footer .footer {
             max-width: 312px;
             line-height: 20px;
             margin-bottom: 47px; }
+          .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect-colors,
+          .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect-colors,
+          .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect-colors {
+            width: 100%;
+            display: flex;
+            margin-bottom: 17px; }
+            .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect-colors label,
+            .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect-colors label,
+            .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect-colors label {
+              font-family: 'PaTiemposHeadline-Light';
+              font-weight: 300;
+              font-size: 20px;
+              line-height: 22px;
+              color: #ffffff;
+              margin-right: 20px; }
+            .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select,
+            .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select,
+            .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select {
+              position: relative; }
+              .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select select,
+              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select select,
+              .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select select {
+                display: none; }
+              .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select .select-selected,
+              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select .select-selected,
+              .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select .select-selected {
+                font-family: 'PaTiemposHeadline-Light';
+                font-size: 20px;
+                line-height: 22px;
+                color: #c24bed;
+                cursor: pointer;
+                padding-right: 19px;
+                padding-bottom: 7px;
+                border-bottom: 1px solid #ffffff; }
+              .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select .select-items,
+              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select .select-items,
+              .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select .select-items {
+                padding: 15px 7px 16px 9px;
+                position: absolute;
+                border: 1px solid #fff;
+                border-top: 0;
+                max-height: 400px;
+                width: 100%;
+                top: 100%;
+                right: 0;
+                z-index: 99;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out; }
+                .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select .select-items div,
+                .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select .select-items div,
+                .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select .select-items div {
+                  font-family: 'PaTiemposHeadline-Light';
+                  font-size: 20px;
+                  line-height: 22px;
+                  color: #fff;
+                  margin-bottom: 9px;
+                  padding-bottom: 5px;
+                  border-bottom: 1px solid #ffffff; }
+              .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select .select-hide,
+              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select .select-hide,
+              .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select .select-hide {
+                display: none; }
+          .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect,
+          .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect,
+          .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect {
+            width: 100%;
+            display: flex;
+            margin-bottom: 63px; }
+            .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect label,
+            .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect label,
+            .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect label {
+              font-family: 'PaTiemposHeadline-Light';
+              font-weight: 300;
+              font-size: 20px;
+              line-height: 22px;
+              color: #ffffff;
+              margin-right: 12px; }
+            .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect .custom-select,
+            .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect .custom-select,
+            .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect .custom-select {
+              position: relative; }
+              .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect .custom-select select,
+              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect .custom-select select,
+              .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect .custom-select select {
+                display: none; }
+              .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-selected,
+              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-selected,
+              .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-selected {
+                font-family: 'PaTiemposHeadline-Light';
+                font-size: 20px;
+                line-height: 22px;
+                color: #fff;
+                position: relative;
+                cursor: pointer;
+                padding-right: 30px;
+                padding-bottom: 7px;
+                border-bottom: 1px solid #ffffff; }
+                .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-selected::after,
+                .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-selected::after,
+                .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-selected::after {
+                  position: absolute;
+                  display: block;
+                  content: '';
+                  background-image: url(../../img/arrow-down.svg);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
+                  top: 9px;
+                  right: 0;
+                  width: 15px;
+                  height: 6px; }
+                  @media (max-width: 767px) {
+                    .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-selected::after,
+                    .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-selected::after,
+                    .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-selected::after {
+                      right: 8px; } }
+              .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-items,
+              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-items,
+              .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-items {
+                padding: 15px 7px 16px 9px;
+                position: absolute;
+                border: 1px solid #fff;
+                background-color: #000;
+                border-top: 0;
+                max-height: 400px;
+                width: 100%;
+                top: 100%;
+                right: 0;
+                z-index: 99;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out; }
+                .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-items div,
+                .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-items div,
+                .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-items div {
+                  font-family: 'PaTiemposHeadline-Light';
+                  font-size: 20px;
+                  line-height: 22px;
+                  color: #fff;
+                  margin-bottom: 9px;
+                  padding-bottom: 5px;
+                  border-bottom: 1px solid #ffffff; }
+              .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-hide,
+              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-hide,
+              .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-hide {
+                display: none; }
+          .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .button,
+          .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .button,
+          .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .button {
+            width: 100%;
+            max-width: 311px;
+            position: relative; }
+            .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .button button,
+            .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .button button,
+            .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .button button {
+              max-width: 224px;
+              width: 100%;
+              padding: 21px 55px;
+              background-color: #fff;
+              font-family: 'TiemposHeadline-Medium';
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 22px;
+              letter-spacing: 0.045em;
+              color: #000000;
+              cursor: pointer; }
+            .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .button::after,
+            .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .button::after,
+            .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .button::after {
+              content: '';
+              position: absolute;
+              background-image: url(../../img/hart.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+              width: 22px;
+              height: 19px;
+              right: 0;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              padding: 17px 15px 17px 16px;
+              border: 1px solid #ffffff;
+              border-radius: 100%; }
         .single .container nav .all-items .single .single-all .single-center,
         .single .container nav .all-items .tinctures .single-all .single-center,
         .single .container nav .all-items .livmor .single-all .single-center {
-          background-image: url(../img/single-purple-img.svg);
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center;
           max-width: 766px;
-          width: 100%;
-          height: 451px;
-          position: relative; }
-          .single .container nav .all-items .single .single-all .single-center .items,
-          .single .container nav .all-items .tinctures .single-all .single-center .items,
-          .single .container nav .all-items .livmor .single-all .single-center .items {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            position: relative; }
-            .single .container nav .all-items .single .single-all .single-center .items .block,
-            .single .container nav .all-items .tinctures .single-all .single-center .items .block,
-            .single .container nav .all-items .livmor .single-all .single-center .items .block {
-              position: absolute; }
-              .single .container nav .all-items .single .single-all .single-center .items .block img,
-              .single .container nav .all-items .tinctures .single-all .single-center .items .block img,
-              .single .container nav .all-items .livmor .single-all .single-center .items .block img {
-                display: flex;
-                max-width: 230px;
-                transition: 0.3s; }
-                .single .container nav .all-items .single .single-all .single-center .items .block img:hover,
-                .single .container nav .all-items .tinctures .single-all .single-center .items .block img:hover,
-                .single .container nav .all-items .livmor .single-all .single-center .items .block img:hover {
-                  border: 2px solid #ffffff; }
-            .single .container nav .all-items .single .single-all .single-center .items .item-1,
-            .single .container nav .all-items .tinctures .single-all .single-center .items .item-1,
-            .single .container nav .all-items .livmor .single-all .single-center .items .item-1 {
-              top: -73px;
-              left: 140px; }
-            .single .container nav .all-items .single .single-all .single-center .items .item-2,
-            .single .container nav .all-items .tinctures .single-all .single-center .items .item-2,
-            .single .container nav .all-items .livmor .single-all .single-center .items .item-2 {
-              top: 47px;
-              left: 76px; }
-            .single .container nav .all-items .single .single-all .single-center .items .item-3,
-            .single .container nav .all-items .tinctures .single-all .single-center .items .item-3,
-            .single .container nav .all-items .livmor .single-all .single-center .items .item-3 {
-              top: 292px;
-              left: 76px; }
+          width: 100%; }
+          .single .container nav .all-items .single .single-all .single-center .click .click-img,
+          .single .container nav .all-items .tinctures .single-all .single-center .click .click-img,
+          .single .container nav .all-items .livmor .single-all .single-center .click .click-img {
+            cursor: pointer;
+            transition: 0.3s; }
+        .single .container nav .all-items .single .single-all .single-right,
+        .single .container nav .all-items .tinctures .single-all .single-right,
+        .single .container nav .all-items .livmor .single-all .single-right {
+          max-width: 297px;
+          width: 100%; }
+          .single .container nav .all-items .single .single-all .single-right .single-right-head,
+          .single .container nav .all-items .tinctures .single-all .single-right .single-right-head,
+          .single .container nav .all-items .livmor .single-all .single-right .single-right-head {
+            width: 100%; }
+            .single .container nav .all-items .single .single-all .single-right .single-right-head .title,
+            .single .container nav .all-items .tinctures .single-all .single-right .single-right-head .title,
+            .single .container nav .all-items .livmor .single-all .single-right .single-right-head .title {
+              padding-bottom: 46px;
+              border-bottom: 1px solid #ffffff; }
+            .single .container nav .all-items .single .single-all .single-right .single-right-head ul li,
+            .single .container nav .all-items .tinctures .single-all .single-right .single-right-head ul li,
+            .single .container nav .all-items .livmor .single-all .single-right .single-right-head ul li {
+              border-bottom: 1px solid #ffffff; }
+              .single .container nav .all-items .single .single-all .single-right .single-right-head ul li a,
+              .single .container nav .all-items .tinctures .single-all .single-right .single-right-head ul li a,
+              .single .container nav .all-items .livmor .single-all .single-right .single-right-head ul li a {
+                padding: 23px 0 30px 0;
+                width: 100%;
+                display: inline-block;
+                font-family: 'TiemposHeadline-Light';
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 22px;
+                color: #ffffff;
+                position: relative; }
+                .single .container nav .all-items .single .single-all .single-right .single-right-head ul li a::after,
+                .single .container nav .all-items .tinctures .single-all .single-right .single-right-head ul li a::after,
+                .single .container nav .all-items .livmor .single-all .single-right .single-right-head ul li a::after {
+                  transition: all ease 0.3s;
+                  content: '';
+                  position: absolute;
+                  background-image: url(../img/star.svg);
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  width: 18px;
+                  height: 19px;
+                  right: 0; }
+              .single .container nav .all-items .single .single-all .single-right .single-right-head ul li .descr,
+              .single .container nav .all-items .tinctures .single-all .single-right .single-right-head ul li .descr,
+              .single .container nav .all-items .livmor .single-all .single-right .single-right-head ul li .descr {
+                display: none;
+                padding-bottom: 31px; }
+                .single .container nav .all-items .single .single-all .single-right .single-right-head ul li .descr p,
+                .single .container nav .all-items .tinctures .single-all .single-right .single-right-head ul li .descr p,
+                .single .container nav .all-items .livmor .single-all .single-right .single-right-head ul li .descr p {
+                  line-height: 20px; }
+            .single .container nav .all-items .single .single-all .single-right .single-right-head ul .open a::after,
+            .single .container nav .all-items .tinctures .single-all .single-right .single-right-head ul .open a::after,
+            .single .container nav .all-items .livmor .single-all .single-right .single-right-head ul .open a::after {
+              opacity: 0.6; }
 
 @keyframes example {
   from {
@@ -1349,3 +1554,9 @@ footer .footer {
   to {
     margin-top: 0;
     margin-left: 0; } }
+
+.outlined {
+  outline-color: white;
+  outline-style: solid;
+  outline-width: 10px;
+  outline-offset: -10px; }
