@@ -572,6 +572,10 @@ footer .footer p {
   position: relative;
   height: 100%;
   min-height: 754px; }
+  @media (max-width: 992px) {
+    .about .container .about-cont {
+      flex-direction: column;
+      min-height: 100%; } }
   .about .container .about-cont .about-left {
     width: 50%;
     display: flex;
@@ -581,7 +585,7 @@ footer .footer p {
         width: 100%;
         max-width: 100%;
         padding: 0 20px;
-        margin: 0 auto;
+        margin: 0 auto 31px;
         text-align: center; } }
     @media (max-width: 375px) {
       .about .container .about-cont .about-left {
@@ -637,9 +641,15 @@ footer .footer p {
     right: 0;
     left: 0;
     bottom: 0;
-    top: 0;
+    top: 46px;
     min-height: 754px;
     max-height: 100%; }
+    @media (max-width: 992px) {
+      .about .container .about-cont .about-center {
+        width: 344px;
+        min-height: fit-content;
+        top: 0;
+        position: inherit; } }
     .about .container .about-cont .about-center .desktop-img {
       position: absolute;
       right: 0;
@@ -649,8 +659,14 @@ footer .footer p {
       min-height: 754px;
       max-height: 100%;
       top: 0; }
+      @media (max-width: 992px) {
+        .about .container .about-cont .about-center .desktop-img {
+          display: none; } }
     .about .container .about-cont .about-center .mobile-img {
       display: none; }
+      @media (max-width: 992px) {
+        .about .container .about-cont .about-center .mobile-img {
+          display: block; } }
   .about .container .about-cont .about-right {
     position: relative;
     width: 50%;
@@ -659,7 +675,9 @@ footer .footer p {
     padding-bottom: 19px; }
     @media (max-width: 992px) {
       .about .container .about-cont .about-right {
-        width: 100%; } }
+        width: 100%;
+        height: 100%;
+        padding-bottom: 0; } }
     .about .container .about-cont .about-right .all-items {
       display: flex;
       flex-direction: column;
@@ -667,30 +685,59 @@ footer .footer p {
       .about .container .about-cont .about-right .all-items .item {
         width: 100%;
         height: 15%;
-        min-height: 105px;
-        background-color: #c24bed; }
+        min-height: 105px; }
         @media (max-width: 992px) {
           .about .container .about-cont .about-right .all-items .item {
-            height: 137px; } }
+            height: 137px;
+            min-height: 137px; } }
         .about .container .about-cont .about-right .all-items .item .item-info {
           padding: 17px 15px 16px 30%;
           height: 100%; }
-          @media (max-width: 1365px) {
-            .about .container .about-cont .about-right .all-items .item .item-info h3 {
-              font-size: 20px;
-              line-height: 22px; } }
+          @media (max-width: 1680px) {
+            .about .container .about-cont .about-right .all-items .item .item-info {
+              padding-left: 33%; } }
+          @media (max-width: 1540px) {
+            .about .container .about-cont .about-right .all-items .item .item-info {
+              padding-left: 36%; } }
+          @media (max-width: 1400px) {
+            .about .container .about-cont .about-right .all-items .item .item-info {
+              padding: 10px 15px 10px 39%; } }
+          @media (max-width: 1300px) {
+            .about .container .about-cont .about-right .all-items .item .item-info {
+              padding-left: 43%; } }
+          @media (max-width: 1200px) {
+            .about .container .about-cont .about-right .all-items .item .item-info {
+              padding-left: 47%; } }
+          @media (max-width: 1100px) {
+            .about .container .about-cont .about-right .all-items .item .item-info {
+              padding-left: 50%; } }
+          @media (max-width: 1030px) {
+            .about .container .about-cont .about-right .all-items .item .item-info {
+              padding-left: 54%; } }
           @media (max-width: 992px) {
-            .about .container .about-cont .about-right .all-items .item .item-info h3 {
-              margin-bottom: 5px; } }
+            .about .container .about-cont .about-right .all-items .item .item-info {
+              padding: 22px 33px; } }
+          .about .container .about-cont .about-right .all-items .item .item-info h3 {
+            margin-bottom: 1px; }
+            @media (max-width: 1375px) {
+              .about .container .about-cont .about-right .all-items .item .item-info h3 {
+                font-size: 20px;
+                line-height: 22px; } }
+            @media (max-width: 992px) {
+              .about .container .about-cont .about-right .all-items .item .item-info h3 {
+                margin-bottom: 5px;
+                text-align: center; } }
           .about .container .about-cont .about-right .all-items .item .item-info p {
-            line-height: 20px; }
-            @media (max-width: 1365px) {
+            line-height: 20px;
+            margin-bottom: 1px; }
+            @media (max-width: 1375px) {
               .about .container .about-cont .about-right .all-items .item .item-info p {
                 max-width: 280px; } }
             @media (max-width: 992px) {
               .about .container .about-cont .about-right .all-items .item .item-info p {
-                max-width: 309px;
-                margin: 0 auto 5px; } }
+                max-width: 100%;
+                margin: 0 auto 5px;
+                text-align: center; } }
           .about .container .about-cont .about-right .all-items .item .item-info span {
             display: inline-block;
             font-family: 'TiemposHeadline-Light';
@@ -699,13 +746,27 @@ footer .footer p {
             letter-spacing: 0.02em;
             color: #fff;
             text-transform: uppercase; }
-            @media (max-width: 1365px) {
+            @media (max-width: 1375px) {
               .about .container .about-cont .about-right .all-items .item .item-info span {
                 font-size: 16px;
                 line-height: 22px; } }
+            @media (max-width: 992px) {
+              .about .container .about-cont .about-right .all-items .item .item-info span {
+                display: block;
+                text-align: center; } }
 
 footer .footer {
   border-top: 0; }
+  @media (max-width: 992px) {
+    footer .footer {
+      background-color: #000;
+      padding: 55px 0 30px 0;
+      text-align: center; } }
+  @media (max-width: 992px) {
+    footer .footer p {
+      display: block;
+      line-height: 14px;
+      letter-spacing: inherit; } }
 
 .shop .container {
   padding: 0 122px; }
@@ -735,31 +796,33 @@ footer .footer {
       justify-content: center;
       flex-wrap: wrap; }
       .shop .container nav .shop-nav ul li {
-        margin-right: 32px;
         display: flex;
         align-items: center;
         transition: 0.7s ease-in-out; }
         @media (max-width: 992px) {
           .shop .container nav .shop-nav ul li {
-            margin-right: 15px;
             width: fit-content; } }
         @media (max-width: 768px) {
-          .shop .container nav .shop-nav ul li {
-            margin-right: 15px;
-            margin-bottom: 15px; }
-            .shop .container nav .shop-nav ul li:nth-child(3n) {
-              margin-right: 0; }
-            .shop .container nav .shop-nav ul li:nth-child(n + 3):nth-last-child(-n + 2) {
-              margin-bottom: 0; } }
-        .shop .container nav .shop-nav ul li:last-child {
-          margin-right: 0; }
+          .shop .container nav .shop-nav ul li:nth-child(3n) a {
+            padding-right: 0; }
+          .shop .container nav .shop-nav ul li:nth-child(n + 3):nth-last-child(-n + 2) a {
+            padding-bottom: 0; } }
         .shop .container nav .shop-nav ul li a {
+          padding-right: 32px;
           font-family: 'TiemposText-Regular';
           font-size: 14px;
           line-height: 20px;
           letter-spacing: 0.02em;
           color: #cccccc;
           transition: 0.7s ease-in-out; }
+          @media (max-width: 992px) {
+            .shop .container nav .shop-nav ul li a {
+              padding-right: 15px; } }
+          @media (max-width: 768px) {
+            .shop .container nav .shop-nav ul li a {
+              padding-bottom: 15px; } }
+        .shop .container nav .shop-nav ul li:last-child a {
+          padding-right: 0; }
       .shop .container nav .shop-nav ul .current a {
         font-family: 'TiemposHeadline-Medium';
         font-size: 40px;
@@ -778,8 +841,8 @@ footer .footer {
       display: flex;
       max-width: 14px;
       height: 17px;
-      margin-left: 32px;
-      margin-right: 32px; }
+      margin-right: 32px;
+      margin-left: 32px; }
       @media (max-width: 768px) {
         .shop .container nav .shop-nav img {
           margin-right: 15px;
@@ -1187,6 +1250,10 @@ footer .footer {
                 font-size: 12px;
                 line-height: 17px; } }
 
+.news-page .header nav .nav-cont {
+  border-bottom: 0;
+  padding-bottom: 69px; }
+
 .single .container {
   padding: 0 74px; }
   @media (max-width: 1245px) {
@@ -1201,7 +1268,10 @@ footer .footer {
     justify-content: center;
     max-width: 368px;
     height: 100%;
-    margin-bottom: 77px; }
+    margin-bottom: 50px; }
+    @media (max-width: 1100px) {
+      .single .container nav .single-nav {
+        display: none; } }
     .single .container nav .single-nav ul {
       display: flex;
       align-items: center;
@@ -1224,7 +1294,7 @@ footer .footer {
           font-size: 16px;
           line-height: 16px;
           color: #fff;
-          transition: 0.7s ease-in-out; }
+          transition: all 0.5s; }
         .single .container nav .single-nav ul li::after {
           content: '';
           position: absolute;
@@ -1240,7 +1310,8 @@ footer .footer {
         font-size: 16px;
         line-height: 16px;
         color: #fff;
-        opacity: 0.6; }
+        opacity: 0.6;
+        transition: all 0.5s; }
         @media (max-width: 992px) {
           .single .container nav .single-nav ul .current a {
             font-size: 30px;
@@ -1262,220 +1333,404 @@ footer .footer {
       .single .container nav .all-items .tinctures .single-all,
       .single .container nav .all-items .livmor .single-all {
         width: 100%;
-        margin-bottom: 104px;
-        display: flex; }
-        .single .container nav .all-items .single .single-all .single-left .single-left-head,
-        .single .container nav .all-items .tinctures .single-all .single-left .single-left-head,
-        .single .container nav .all-items .livmor .single-all .single-left .single-left-head {
-          max-width: 368px;
-          width: 100%; }
-          .single .container nav .all-items .single .single-all .single-left .single-left-head .title,
-          .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .title,
-          .single .container nav .all-items .livmor .single-all .single-left .single-left-head .title {
-            margin-bottom: 17px; }
-          .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info span,
-          .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info span,
-          .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info span {
-            font-family: 'PaTiemposHeadline-Light';
-            font-weight: 300;
-            font-size: 32px;
-            line-height: 35px;
-            color: #ffffff;
-            display: inline-block;
-            margin-bottom: 14px; }
-          .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info p,
-          .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info p,
-          .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info p {
-            max-width: 312px;
-            line-height: 20px;
-            margin-bottom: 47px; }
-          .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect-colors,
-          .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect-colors,
-          .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect-colors {
-            width: 100%;
-            display: flex;
-            margin-bottom: 17px; }
-            .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect-colors label,
-            .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect-colors label,
-            .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect-colors label {
-              font-family: 'PaTiemposHeadline-Light';
-              font-weight: 300;
-              font-size: 20px;
-              line-height: 22px;
-              color: #ffffff;
-              margin-right: 20px; }
-            .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select,
-            .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select,
-            .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select {
-              position: relative; }
-              .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select select,
-              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select select,
-              .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select select {
-                display: none; }
-              .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select .select-selected,
-              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select .select-selected,
-              .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select .select-selected {
-                font-family: 'PaTiemposHeadline-Light';
-                font-size: 20px;
-                line-height: 22px;
-                color: #c24bed;
-                cursor: pointer;
-                padding-right: 19px;
-                padding-bottom: 7px;
-                border-bottom: 1px solid #ffffff; }
-              .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select .select-items,
-              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select .select-items,
-              .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select .select-items {
-                padding: 15px 7px 16px 9px;
-                position: absolute;
-                border: 1px solid #fff;
-                border-top: 0;
-                max-height: 400px;
-                width: 100%;
-                top: 100%;
-                right: 0;
-                z-index: 99;
-                cursor: pointer;
-                transition: all 0.3s ease-in-out; }
-                .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select .select-items div,
-                .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select .select-items div,
-                .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select .select-items div {
-                  font-family: 'PaTiemposHeadline-Light';
-                  font-size: 20px;
-                  line-height: 22px;
-                  color: #fff;
-                  margin-bottom: 9px;
-                  padding-bottom: 5px;
-                  border-bottom: 1px solid #ffffff; }
-              .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select .select-hide,
-              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select .select-hide,
-              .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect-colors .custom-select .select-hide {
-                display: none; }
-          .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect,
-          .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect,
-          .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect {
-            width: 100%;
-            display: flex;
-            margin-bottom: 63px; }
-            .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect label,
-            .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect label,
-            .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect label {
-              font-family: 'PaTiemposHeadline-Light';
-              font-weight: 300;
-              font-size: 20px;
-              line-height: 22px;
-              color: #ffffff;
-              margin-right: 12px; }
-            .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect .custom-select,
-            .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect .custom-select,
-            .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect .custom-select {
-              position: relative; }
-              .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect .custom-select select,
-              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect .custom-select select,
-              .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect .custom-select select {
-                display: none; }
-              .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-selected,
-              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-selected,
-              .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-selected {
-                font-family: 'PaTiemposHeadline-Light';
-                font-size: 20px;
-                line-height: 22px;
-                color: #fff;
-                position: relative;
-                cursor: pointer;
-                padding-right: 30px;
-                padding-bottom: 7px;
-                border-bottom: 1px solid #ffffff; }
-                .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-selected::after,
-                .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-selected::after,
-                .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-selected::after {
-                  position: absolute;
-                  display: block;
-                  content: '';
-                  background-image: url(../../img/arrow-down.svg);
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                  background-position: center;
-                  top: 9px;
-                  right: 0;
-                  width: 15px;
-                  height: 6px; }
-                  @media (max-width: 767px) {
-                    .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-selected::after,
-                    .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-selected::after,
-                    .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-selected::after {
-                      right: 8px; } }
-              .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-items,
-              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-items,
-              .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-items {
-                padding: 15px 7px 16px 9px;
-                position: absolute;
-                border: 1px solid #fff;
-                background-color: #000;
-                border-top: 0;
-                max-height: 400px;
-                width: 100%;
-                top: 100%;
-                right: 0;
-                z-index: 99;
-                cursor: pointer;
-                transition: all 0.3s ease-in-out; }
-                .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-items div,
-                .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-items div,
-                .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-items div {
-                  font-family: 'PaTiemposHeadline-Light';
-                  font-size: 20px;
-                  line-height: 22px;
-                  color: #fff;
-                  margin-bottom: 9px;
-                  padding-bottom: 5px;
-                  border-bottom: 1px solid #ffffff; }
-              .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-hide,
-              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-hide,
-              .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .celect .custom-select .select-hide {
-                display: none; }
-          .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .button,
-          .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .button,
-          .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .button {
-            width: 100%;
-            max-width: 311px;
-            position: relative; }
-            .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .button button,
-            .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .button button,
-            .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .button button {
-              max-width: 224px;
+        margin-bottom: 131px;
+        display: flex;
+        justify-content: space-between; }
+        @media (max-width: 1100px) {
+          .single .container nav .all-items .single .single-all,
+          .single .container nav .all-items .tinctures .single-all,
+          .single .container nav .all-items .livmor .single-all {
+            flex-direction: column; } }
+        @media (max-width: 992px) {
+          .single .container nav .all-items .single .single-all,
+          .single .container nav .all-items .tinctures .single-all,
+          .single .container nav .all-items .livmor .single-all {
+            margin-bottom: 0; } }
+        .single .container nav .all-items .single .single-all .single-left,
+        .single .container nav .all-items .tinctures .single-all .single-left,
+        .single .container nav .all-items .livmor .single-all .single-left {
+          width: 30%; }
+          @media (max-width: 1100px) {
+            .single .container nav .all-items .single .single-all .single-left,
+            .single .container nav .all-items .tinctures .single-all .single-left,
+            .single .container nav .all-items .livmor .single-all .single-left {
+              order: 2;
               width: 100%;
-              padding: 21px 55px;
-              background-color: #fff;
-              font-family: 'TiemposHeadline-Medium';
-              font-weight: 500;
-              font-size: 20px;
-              line-height: 22px;
-              letter-spacing: 0.045em;
-              color: #000000;
-              cursor: pointer; }
-            .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .button::after,
-            .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .button::after,
-            .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .button::after {
-              content: '';
-              position: absolute;
-              background-image: url(../../img/hart.svg);
-              background-position: center;
-              background-repeat: no-repeat;
-              width: 22px;
-              height: 19px;
-              right: 0;
-              top: 0;
-              bottom: 0;
-              margin: auto;
-              padding: 17px 15px 17px 16px;
-              border: 1px solid #ffffff;
-              border-radius: 100%; }
+              margin-bottom: 88px; } }
+          .single .container nav .all-items .single .single-all .single-left .single-left-head,
+          .single .container nav .all-items .tinctures .single-all .single-left .single-left-head,
+          .single .container nav .all-items .livmor .single-all .single-left .single-left-head {
+            max-width: 368px;
+            width: 100%; }
+            @media (max-width: 1100px) {
+              .single .container nav .all-items .single .single-all .single-left .single-left-head,
+              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head,
+              .single .container nav .all-items .livmor .single-all .single-left .single-left-head {
+                max-width: 100%; } }
+            .single .container nav .all-items .single .single-all .single-left .single-left-head .title,
+            .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .title,
+            .single .container nav .all-items .livmor .single-all .single-left .single-left-head .title {
+              margin-bottom: 17px; }
+              @media (max-width: 768px) {
+                .single .container nav .all-items .single .single-all .single-left .single-left-head .title,
+                .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .title,
+                .single .container nav .all-items .livmor .single-all .single-left .single-left-head .title {
+                  margin-bottom: 8px; } }
+              @media (max-width: 1380px) {
+                .single .container nav .all-items .single .single-all .single-left .single-left-head .title h2,
+                .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .title h2,
+                .single .container nav .all-items .livmor .single-all .single-left .single-left-head .title h2 {
+                  font-size: 50px;
+                  line-height: 57px; } }
+              @media (max-width: 1200px) {
+                .single .container nav .all-items .single .single-all .single-left .single-left-head .title h2,
+                .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .title h2,
+                .single .container nav .all-items .livmor .single-all .single-left .single-left-head .title h2 {
+                  font-size: 40px;
+                  line-height: 47px; } }
+              @media (max-width: 768px) {
+                .single .container nav .all-items .single .single-all .single-left .single-left-head .title h2,
+                .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .title h2,
+                .single .container nav .all-items .livmor .single-all .single-left .single-left-head .title h2 {
+                  font-size: 24px;
+                  line-height: 27px; } }
+            .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info span,
+            .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info span,
+            .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info span {
+              font-family: 'TiemposHeadline-Light';
+              font-weight: 300;
+              font-size: 32px;
+              line-height: 35px;
+              color: #ffffff;
+              display: inline-block;
+              margin-bottom: 14px; }
+              @media (max-width: 1380px) {
+                .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info span,
+                .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info span,
+                .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info span {
+                  font-size: 26px;
+                  line-height: 30px; } }
+              @media (max-width: 1200px) {
+                .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info span,
+                .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info span,
+                .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info span {
+                  font-size: 23px;
+                  line-height: 26px; } }
+              @media (max-width: 768px) {
+                .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info span,
+                .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info span,
+                .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info span {
+                  font-size: 20px;
+                  line-height: 22px;
+                  margin-bottom: 24px; } }
+            .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .descr,
+            .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .descr,
+            .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .descr {
+              margin-bottom: 47px; }
+              @media (max-width: 1100px) {
+                .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .descr,
+                .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .descr,
+                .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .descr {
+                  display: none; } }
+              .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .descr p,
+              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .descr p,
+              .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .descr p {
+                max-width: 312px;
+                line-height: 20px; }
+            @media (max-width: 1100px) {
+              .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects,
+              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects,
+              .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects {
+                margin-bottom: 35px; } }
+            .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect-colors,
+            .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect-colors,
+            .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect-colors {
+              width: 100%;
+              display: flex;
+              margin-bottom: 17px; }
+              .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect-colors .label,
+              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect-colors .label,
+              .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect-colors .label {
+                font-family: 'TiemposHeadline-Light';
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 22px;
+                color: #ffffff;
+                margin-right: 20px; }
+                @media (max-width: 1200px) {
+                  .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect-colors .label,
+                  .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect-colors .label,
+                  .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect-colors .label {
+                    font-size: 18px;
+                    line-height: 18px; } }
+                @media (max-width: 1100px) {
+                  .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect-colors .label,
+                  .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect-colors .label,
+                  .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect-colors .label {
+                    font-size: 16px;
+                    margin-right: 27px; } }
+              .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect-colors input,
+              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect-colors input,
+              .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect-colors input {
+                background-color: #000;
+                font-family: 'TiemposHeadline-Medium';
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 22px;
+                max-width: 70px;
+                padding-bottom: 9px;
+                border-bottom: 1px solid #ffffff; }
+                @media (max-width: 1200px) {
+                  .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect-colors input,
+                  .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect-colors input,
+                  .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect-colors input {
+                    font-size: 18px;
+                    line-height: 18px; } }
+                @media (max-width: 1100px) {
+                  .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect-colors input,
+                  .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect-colors input,
+                  .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect-colors input {
+                    font-size: 16px;
+                    margin-right: 27px;
+                    padding-bottom: 5px; } }
+            .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect,
+            .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect,
+            .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect {
+              width: 100%;
+              display: flex;
+              margin-bottom: 63px; }
+              @media (max-width: 1100px) {
+                .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect,
+                .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect,
+                .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect {
+                  margin-bottom: 24px; } }
+              .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect label,
+              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect label,
+              .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect label {
+                font-family: 'TiemposHeadline-Light';
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 22px;
+                color: #ffffff;
+                margin-right: 12px; }
+                @media (max-width: 1200px) {
+                  .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect label,
+                  .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect label,
+                  .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect label {
+                    font-size: 18px;
+                    line-height: 18px; } }
+                @media (max-width: 1100px) {
+                  .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect label,
+                  .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect label,
+                  .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect label {
+                    font-size: 16px;
+                    margin-right: 18px; } }
+              .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select,
+              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select,
+              .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select {
+                position: relative; }
+                .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select select,
+                .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select select,
+                .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select select {
+                  display: none; }
+                .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-selected,
+                .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-selected,
+                .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-selected {
+                  font-family: 'TiemposHeadline-Light';
+                  font-size: 20px;
+                  line-height: 22px;
+                  color: #fff;
+                  position: relative;
+                  cursor: pointer;
+                  padding-right: 30px;
+                  padding-bottom: 7px;
+                  border-bottom: 1px solid #ffffff; }
+                  @media (max-width: 1200px) {
+                    .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-selected,
+                    .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-selected,
+                    .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-selected {
+                      font-size: 18px;
+                      line-height: 18px;
+                      padding-right: 23px; } }
+                  @media (max-width: 1100px) {
+                    .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-selected,
+                    .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-selected,
+                    .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-selected {
+                      padding-right: 31px;
+                      font-size: 16px; } }
+                  .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-selected::after,
+                  .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-selected::after,
+                  .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-selected::after {
+                    position: absolute;
+                    display: block;
+                    content: '';
+                    background-image: url(../../img/arrow-down.svg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    top: 9px;
+                    right: 0;
+                    width: 15px;
+                    height: 6px; }
+                    @media (max-width: 767px) {
+                      .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-selected::after,
+                      .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-selected::after,
+                      .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-selected::after {
+                        right: 8px; } }
+                .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-items,
+                .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-items,
+                .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-items {
+                  padding: 15px 7px 16px 9px;
+                  position: absolute;
+                  border: 1px solid #fff;
+                  background-color: #000;
+                  max-height: 400px;
+                  width: 144px;
+                  top: calc(100% - 1px);
+                  left: 0;
+                  z-index: 99;
+                  cursor: pointer;
+                  transition: all 0.3s ease-in-out; }
+                  @media (max-width: 1100px) {
+                    .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-items,
+                    .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-items,
+                    .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-items {
+                      padding: 15px 18px 16px 14px; } }
+                  .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-items div,
+                  .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-items div,
+                  .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-items div {
+                    font-family: 'TiemposHeadline-Light';
+                    font-size: 20px;
+                    line-height: 22px;
+                    color: #fff;
+                    margin-bottom: 9px;
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid #ffffff; }
+                    @media (max-width: 1200px) {
+                      .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-items div,
+                      .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-items div,
+                      .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-items div {
+                        font-size: 18px;
+                        line-height: 18px; } }
+                    @media (max-width: 1100px) {
+                      .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-items div,
+                      .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-items div,
+                      .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-items div {
+                        font-size: 14px;
+                        line-height: 15px; } }
+                .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-hide,
+                .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-hide,
+                .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects .celect .custom-select .select-hide {
+                  display: none; }
+            .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects p,
+            .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects p,
+            .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects p {
+              display: none; }
+              @media (max-width: 1100px) {
+                .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .all-selects p,
+                .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .all-selects p,
+                .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .all-selects p {
+                  display: block; } }
+            .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .button,
+            .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .button,
+            .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .button {
+              width: 100%;
+              max-width: 311px;
+              position: relative; }
+              @media (max-width: 1100px) {
+                .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .button,
+                .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .button,
+                .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .button {
+                  max-width: 335px; } }
+              .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .button button,
+              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .button button,
+              .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .button button {
+                max-width: 224px;
+                width: 100%;
+                padding: 21px 55px;
+                background-color: #fff;
+                font-family: 'TiemposHeadline-Medium';
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 22px;
+                letter-spacing: 0.045em;
+                color: #000000;
+                cursor: pointer; }
+                @media (max-width: 1100px) {
+                  .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .button button,
+                  .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .button button,
+                  .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .button button {
+                    font-size: 16px;
+                    line-height: 18px;
+                    max-width: 264px;
+                    padding: 17px 86px; } }
+              .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .button::after,
+              .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .button::after,
+              .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .button::after {
+                content: '';
+                position: absolute;
+                background-image: url(../../img/hart.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 22px;
+                height: 19px;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                padding: 17px 15px 17px 16px;
+                border: 1px solid #ffffff;
+                border-radius: 100%; }
+                @media (max-width: 1100px) {
+                  .single .container nav .all-items .single .single-all .single-left .single-left-head .single-left-info .button::after,
+                  .single .container nav .all-items .tinctures .single-all .single-left .single-left-head .single-left-info .button::after,
+                  .single .container nav .all-items .livmor .single-all .single-left .single-left-head .single-left-info .button::after {
+                    width: 19px;
+                    height: 16px; } }
         .single .container nav .all-items .single .single-all .single-center,
         .single .container nav .all-items .tinctures .single-all .single-center,
         .single .container nav .all-items .livmor .single-all .single-center {
-          max-width: 766px;
-          width: 100%; }
+          width: 45.8%;
+          margin-right: 47px;
+          display: flex;
+          justify-content: center; }
+          @media (max-width: 1300px) {
+            .single .container nav .all-items .single .single-all .single-center,
+            .single .container nav .all-items .tinctures .single-all .single-center,
+            .single .container nav .all-items .livmor .single-all .single-center {
+              margin-right: 20px; } }
+          @media (max-width: 1100px) {
+            .single .container nav .all-items .single .single-all .single-center,
+            .single .container nav .all-items .tinctures .single-all .single-center,
+            .single .container nav .all-items .livmor .single-all .single-center {
+              order: 1;
+              margin-right: 0;
+              margin-bottom: 50px;
+              width: 100%; } }
+          @media (max-width: 1400px) {
+            .single .container nav .all-items .single .single-all .single-center .click,
+            .single .container nav .all-items .tinctures .single-all .single-center .click,
+            .single .container nav .all-items .livmor .single-all .single-center .click {
+              width: 500px;
+              height: 500px; } }
+          @media (max-width: 1200px) {
+            .single .container nav .all-items .single .single-all .single-center .click,
+            .single .container nav .all-items .tinctures .single-all .single-center .click,
+            .single .container nav .all-items .livmor .single-all .single-center .click {
+              width: 450px;
+              height: 450px; } }
+          @media (max-width: 768px) {
+            .single .container nav .all-items .single .single-all .single-center .click,
+            .single .container nav .all-items .tinctures .single-all .single-center .click,
+            .single .container nav .all-items .livmor .single-all .single-center .click {
+              width: 430px;
+              height: 430px; } }
+          @media (max-width: 400px) {
+            .single .container nav .all-items .single .single-all .single-center .click,
+            .single .container nav .all-items .tinctures .single-all .single-center .click,
+            .single .container nav .all-items .livmor .single-all .single-center .click {
+              width: 334px;
+              height: 326px; } }
           .single .container nav .all-items .single .single-all .single-center .click .click-img,
           .single .container nav .all-items .tinctures .single-all .single-center .click .click-img,
           .single .container nav .all-items .livmor .single-all .single-center .click .click-img {
@@ -1484,8 +1739,13 @@ footer .footer {
         .single .container nav .all-items .single .single-all .single-right,
         .single .container nav .all-items .tinctures .single-all .single-right,
         .single .container nav .all-items .livmor .single-all .single-right {
-          max-width: 297px;
-          width: 100%; }
+          width: 24.2%; }
+          @media (max-width: 1100px) {
+            .single .container nav .all-items .single .single-all .single-right,
+            .single .container nav .all-items .tinctures .single-all .single-right,
+            .single .container nav .all-items .livmor .single-all .single-right {
+              order: 3;
+              width: 100%; } }
           .single .container nav .all-items .single .single-all .single-right .single-right-head,
           .single .container nav .all-items .tinctures .single-all .single-right .single-right-head,
           .single .container nav .all-items .livmor .single-all .single-right .single-right-head {
@@ -1495,6 +1755,17 @@ footer .footer {
             .single .container nav .all-items .livmor .single-all .single-right .single-right-head .title {
               padding-bottom: 46px;
               border-bottom: 1px solid #ffffff; }
+              @media (max-width: 768px) {
+                .single .container nav .all-items .single .single-all .single-right .single-right-head .title,
+                .single .container nav .all-items .tinctures .single-all .single-right .single-right-head .title,
+                .single .container nav .all-items .livmor .single-all .single-right .single-right-head .title {
+                  padding-bottom: 40px; } }
+              @media (max-width: 768px) {
+                .single .container nav .all-items .single .single-all .single-right .single-right-head .title h3,
+                .single .container nav .all-items .tinctures .single-all .single-right .single-right-head .title h3,
+                .single .container nav .all-items .livmor .single-all .single-right .single-right-head .title h3 {
+                  font-size: 20px;
+                  line-height: 22px; } }
             .single .container nav .all-items .single .single-all .single-right .single-right-head ul li,
             .single .container nav .all-items .tinctures .single-all .single-right .single-right-head ul li,
             .single .container nav .all-items .livmor .single-all .single-right .single-right-head ul li {
@@ -1502,7 +1773,7 @@ footer .footer {
               .single .container nav .all-items .single .single-all .single-right .single-right-head ul li a,
               .single .container nav .all-items .tinctures .single-all .single-right .single-right-head ul li a,
               .single .container nav .all-items .livmor .single-all .single-right .single-right-head ul li a {
-                padding: 23px 0 30px 0;
+                padding: 25px 0;
                 width: 100%;
                 display: inline-block;
                 font-family: 'TiemposHeadline-Light';
@@ -1511,6 +1782,13 @@ footer .footer {
                 line-height: 22px;
                 color: #ffffff;
                 position: relative; }
+                @media (max-width: 768px) {
+                  .single .container nav .all-items .single .single-all .single-right .single-right-head ul li a,
+                  .single .container nav .all-items .tinctures .single-all .single-right .single-right-head ul li a,
+                  .single .container nav .all-items .livmor .single-all .single-right .single-right-head ul li a {
+                    font-size: 16px;
+                    line-height: 18px;
+                    padding: 20px 0; } }
                 .single .container nav .all-items .single .single-all .single-right .single-right-head ul li a::after,
                 .single .container nav .all-items .tinctures .single-all .single-right .single-right-head ul li a::after,
                 .single .container nav .all-items .livmor .single-all .single-right .single-right-head ul li a::after {
@@ -1528,7 +1806,7 @@ footer .footer {
               .single .container nav .all-items .tinctures .single-all .single-right .single-right-head ul li .descr,
               .single .container nav .all-items .livmor .single-all .single-right .single-right-head ul li .descr {
                 display: none;
-                padding-bottom: 31px; }
+                padding-bottom: 25px; }
                 .single .container nav .all-items .single .single-all .single-right .single-right-head ul li .descr p,
                 .single .container nav .all-items .tinctures .single-all .single-right .single-right-head ul li .descr p,
                 .single .container nav .all-items .livmor .single-all .single-right .single-right-head ul li .descr p {
@@ -1551,3 +1829,16 @@ footer .footer {
   outline-style: solid;
   outline-width: 10px;
   outline-offset: -10px; }
+
+footer .footer {
+  border-top: 0; }
+  @media (max-width: 992px) {
+    footer .footer {
+      background-color: #000;
+      padding: 97px 0 30px 0;
+      text-align: center; } }
+  @media (max-width: 992px) {
+    footer .footer p {
+      display: block;
+      line-height: 14px;
+      letter-spacing: inherit; } }

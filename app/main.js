@@ -5585,7 +5585,7 @@ ul.addEventListener('click', (event) => {
   const curElemData = _target.children[0].getAttribute('data-title');
   const singleTabs = document.getElementById('listTab').children;
   for (const single of singleTabs) {
-    console.log(curElemData, single.getAttribute('data-title'));
+    // console.log(curElemData, single.getAttribute('data-title'));
     if (curElemData === single.getAttribute('data-title')) {
       single.style.display = 'flex';
     } else {
@@ -5658,6 +5658,9 @@ product_viewer.find('path[id]').click(function () {
   if (imgSrc) {
     $('#img_p').attr('xlink:href', imgSrc);
   }
+  $('#strain_input')
+    .val($(this).data('color'))
+    .css('color', $(this).attr('fill'));
 });
 
 $('.content_toggle li > a').click(function (e) {

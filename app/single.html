@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>LivMore</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css?asdasda" />
   </head>
   <body class="news-page">
     <header class="header">
@@ -83,8 +83,8 @@
               </li>
             </ul>
           </div>
-          <div class="all-items" >
-            <div  class="single">
+          <div class="all-items" id="listTab">
+            <div data-title="livmor" class="single">
               <div class="single-all">
                 <div class="single-left">
                   <div class="single-left-head">
@@ -93,6 +93,7 @@
                     </div>
                     <div class="single-left-info">
                       <span>$ 39.99</span>
+                      <div class="descr">
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
@@ -100,68 +101,69 @@
                         exercitation ullamco laboris nisi ut aliquip ex ea
                         commodo consequat.
                       </p>
+                    </div>
+                      <div class="all-selects">
                       <div class="celect-colors">
-                        <label class="label" for="emailname">Choose your strain:</label>
-                        <div class="custom-select">
-                          <select>
-                            <option id="p2" value="0">Violet</option>
-                            <option value="1">Bluy</option>
-                            <option value="2">Acua</option>
-                            <option value="3">Green</option>
-                            <option id="p7" value="4">Yellow</option>
-                            <option value="5">Orange</option>
-                            <option value="6">Red</option>
-                          </select>
-                        </div>
+                        <label class="label">Choose your strain:</label>
+                        <input value="Violet" name="strain" id="strain_input" style="color:#C24BED;" readonly/>
+                        
                      </div>
                       <div class="celect">
-                        <label for="emailname">Choose CBD dosage:</label>
+                        <label>Choose CBD dosage:</label>
                         <div class="custom-select">
                           <select>
+                            <option value="">Select CBD</option>
                             <option value="0">500mg CBD</option>
                             <option value="1">250mg CBD</option>
                             <option value="2">1000mg CBD</option>
                           </select>
                         </div>
                      </div>
+                     <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea
+                      commodo consequat.
+                    </p>
+                    </div>
                      <div class="button">
                         <button type="button">Add to Cart</button>
                      </div>
                   </div>
                </div>
-            </div>
+                </div>
                <div class="single-center">
-                  
-                  <svg class="click" id="product_viewer" width="767" height="689" viewBox="0 0 767 689" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                     <path d="M207.176 168.051L383.073 83.3435L558.969 168.051L602.412 358.386L480.688 511.023H285.458L163.734 358.386L207.176 168.051Z" fill="url(#pattern0)" stroke="black"/>
-                     <path class="click-img" id="p1" d="M149.459 112.411L205.338 156.845L379.033 72.0168V2L149.459 112.411Z" fill="#EF0967"/>
-                     <path class="click-img" id="p2" d="M86.2177 368.731L155.822 352.853L198.086 164.228L143.411 120.49L86.2177 368.731Z" fill="#C24BED" data-img="img/p2.png"/>
-                     <path class="click-img" id="p3" d="M680.608 367.296L610.867 352.033L566.938 163.788L621.225 119.569L680.608 367.296Z" fill="#00B5DC"/>
-                     <path class="click-img" id="p4" d="M242.693 577.742L273.856 513.511L153.155 362.524L84.8269 377.809L242.693 577.742Z" fill="#EC5F4E"/>
-                     <path class="click-img" id="p5" d="M524.895 579.063L493.038 515.173L612.096 362.887L680.585 377.431L524.895 579.063Z" fill="#3D70F5"/>
-                     <path class="click-img" id="p6" d="M250.155 584.203L280.191 520.457L485.292 520.457L517.474 584.203L250.155 584.203Z" fill="#8CBF00"/>
-                     <path class="click-img" id="p7" d="M616.013 112.411L560.135 156.845L386.439 72.0168V2L616.013 112.411Z" fill="#FFD800" data-img="img/p7.png"/>
-                     <defs>
-                     <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                     <use xlink:href="#img_p" transform="translate(-0.0332543 -0.00839909) scale(0.000497612 0.000554823)"/>
-                     </pattern>
-                     <image id="img_p" width="2145" height="2403" xlink:href=""/>
-                     <clipPath id="p1c"><use xlink:href="#p1"/></clipPath>
-                     </defs>
-                     <use id="use_p" xlink:href="#p1" stroke-width="20" stroke="white" fill="none" clip-path="url(#p1c)"/>
-                     </svg>
-                     
-   
+                      <svg class="click" id="product_viewer" width="580" height="566" viewBox="0 0 580 566" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M85.5409 342.8L126.136 164.904L290 85.5555L453.864 164.904L494.459 342.8L380.965 485.5H199.035L85.5409 342.8Z" fill="url(#pattern0)"/>
+                        <path class="click-img" id="p1" d="M54.8364 116.211L0 356.015L71.4982 339.775L111.993 162.189L54.8364 116.211Z" fill="#C24BED" data-img="img/p2.jpg" data-color="Violet"/>
+                        <path class="click-img" id="p2" d="M119.585 152.487L283.884 73.3964V0L62.4291 106.72L119.585 152.487Z" fill="#EF0967" data-color="Red"/>
+                        <path class="click-img" id="p3" d="M296.116 0V73.3964L460.415 152.487L517.782 106.72L296.116 0Z" fill="#EC5F4E" data-color="Orange"/>
+                        <path class="click-img" id="p4" d="M580 356.015L525.164 116.211L468.007 161.978L508.502 339.775L580 356.015Z" fill="#FFD800" data-img="img/p7.jpg" data-color="Yellow"/>
+                        <path class="click-img" id="p5" d="M423.927 560.175L577.258 367.825L505.76 351.585L392.08 494.16L423.927 560.175Z" fill="#8CBF00" data-color="Green"/>
+                        <path class="click-img" id="p6" d="M74.24 351.585L2.74179 367.825L156.073 560.175L187.92 494.16L74.24 351.585Z" fill="#3D70F5" data-color="Bluy"/>
+                        <path class="click-img" id="p7" d="M290 565.447H412.96L381.113 499.433H290H198.887L167.04 565.447H290Z" fill="#00B5DC" data-color="Aqua"/> 
+                        <defs>
+                          <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                          <use xlink:href="#img_p" transform="translate(-0.0332543 -0.00839909) scale(0.000497612 0.000554823)"/>
+                          </pattern>
+                          <image id="img_p" width="2145" height="2403" xlink:href="img/p2.jpg"/>
+                          <clipPath id="p1c"><use xlink:href="#p1"/></clipPath>
+                          </defs>
+                          <use id="use_p" xlink:href="#p1" stroke-width="20" stroke="white" fill="none" clip-path="url(#p1c)"/>
+                        </svg>
+                        
+                        
                </div>
                <div class="single-right">
                   <div class="single-right-head">
                    <div class="title">
                      <h3>About</h3>
                   </div>
-                      <ul class="content_toggle">
+                <ul class="content_toggle">
                   <li><a href="#">Daily Wellnes</a>
-                     <div class="descr">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    <div class="descr">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                            tempor incididunt ut labore et dolore magna aliqua. </p>
    
                            <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
@@ -186,14 +188,17 @@
                            nisi ut aliquip ex ea commodo consequat. </p>
                      </div>
                   </li>
-                 
-                 
-               </ul>
+                 </ul>
             </div>
-               </div>
+              </div>
         </nav>
       </div>
     </section>
+    <footer>
+      <div class="footer">
+        <p>(C) 2022 Livmor. All rights reserved.</p>
+      </div>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
