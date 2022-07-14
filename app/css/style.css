@@ -1943,7 +1943,7 @@ footer .footer {
         .homepage .container .homepage-all .homepage-center .click {
           width: 257px;
           height: 204px; } }
-      .homepage .container .homepage-all .homepage-center .click .yellow-click {
+      .homepage .container .homepage-all .homepage-center .click #Yellow {
         cursor: pointer; }
     .homepage .container .homepage-all .homepage-right {
       width: 21%; }
