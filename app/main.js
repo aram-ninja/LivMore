@@ -5751,4 +5751,16 @@ function closeAllSelect(elmnt) {
 }
 /*if the user clicks anywhere outside the select box,
       then close all select boxes:*/
-document.addEventListener('click', closeAllSelect);
+// document.addEventListener('click', closeAllSelect);
+
+// let product_colors = $('#product_colors');
+
+// product_colors.find('path[id]').click(function () {
+//   let pid = $(this).attr('id');
+//   product_colors.find('clipPath').attr('id');
+
+//   product_colors
+//     .find('#use_p')
+//     .attr('xlink:href', '#' + pid)
+//     .attr('clip-path', 'url(#' + pid + 'c)');
+// });
