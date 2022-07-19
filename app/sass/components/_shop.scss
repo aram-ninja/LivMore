@@ -398,6 +398,19 @@
           &:last-child {
             margin-right: 0;
           }
+          a {
+            font-family: 'TiemposText-Regular';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            color: #cccccc;
+            opacity: 0.8;
+            @media (max-width: 768px) {
+              font-size: 12px;
+              line-height: 17px;
+            }
+          }
           p {
             line-height: 20px;
             color: #cccccc;

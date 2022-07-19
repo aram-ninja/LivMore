@@ -1241,6 +1241,18 @@ footer .footer {
                 margin-bottom: 0; } }
           .footer .footer-cont .footer-down-info ul li:last-child {
             margin-right: 0; }
+          .footer .footer-cont .footer-down-info ul li a {
+            font-family: 'TiemposText-Regular';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            color: #cccccc;
+            opacity: 0.8; }
+            @media (max-width: 768px) {
+              .footer .footer-cont .footer-down-info ul li a {
+                font-size: 12px;
+                line-height: 17px; } }
           .footer .footer-cont .footer-down-info ul li p {
             line-height: 20px;
             color: #cccccc;
@@ -1843,8 +1855,10 @@ footer .footer {
       line-height: 14px;
       letter-spacing: inherit; } }
 
-.news-page {
-  height: 100vh; }
+.news-page .header {
+  position: fixed;
+  width: 100%;
+  z-index: 999; }
   .news-page .header nav .nav-cont {
     border-bottom: 0;
     padding: 41px 34px 0 28px;
@@ -1857,9 +1871,11 @@ footer .footer {
     @media (max-width: 768px) {
       .news-page .header nav .nav-cont {
         justify-content: space-between; } }
+    .news-page .header nav .nav-cont .header-left .burger {
+      border: none; }
     .news-page .header nav .nav-cont .header-center {
       margin-top: 34px;
-      margin-left: 90px; }
+      margin-left: 110px; }
       @media (max-width: 992px) {
         .news-page .header nav .nav-cont .header-center {
           margin: 0;
@@ -1871,29 +1887,25 @@ footer .footer {
           display: none; } }
 
 .homepage .container {
-  padding: 0 101px; }
-  @media (max-width: 1400px) {
-    .homepage .container {
-      padding: 0 50px; } }
-  @media (max-width: 1140px) {
-    .homepage .container {
-      padding: 0 20px; } }
+  padding: 0; }
+  .homepage .container .homepage-cont {
+    position: relative; }
   .homepage .container .homepage-all {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 141px; }
+    position: relative; }
     @media (max-width: 1100px) {
       .homepage .container .homepage-all {
         flex-direction: column; } }
     .homepage .container .homepage-all .homepage-left {
-      width: 20%; }
+      width: 50%;
+      height: 100%;
+      padding-left: 10%; }
       @media (max-width: 1100px) {
         .homepage .container .homepage-all .homepage-left {
           width: 100%;
           margin: 0 auto 32px; } }
       .homepage .container .homepage-all .homepage-left .title {
-        max-width: 251px;
         width: 100%; }
         @media (max-width: 1100px) {
           .homepage .container .homepage-all .homepage-left .title {
@@ -1901,57 +1913,32 @@ footer .footer {
         @media (max-width: 768px) {
           .homepage .container .homepage-all .homepage-left .title {
             margin-bottom: 0; } }
-        .homepage .container .homepage-all .homepage-left .title h2 {
-          font-family: 'TiemposHeadline-Light';
-          font-weight: 400;
-          font-size: 44px;
-          line-height: 49px;
-          text-align: center; }
-          @media (max-width: 1400px) {
-            .homepage .container .homepage-all .homepage-left .title h2 {
-              font-size: 36px;
-              line-height: 40px; } }
-          @media (max-width: 768px) {
-            .homepage .container .homepage-all .homepage-left .title h2 {
-              font-size: 32px;
-              line-height: 35px; } }
-    .homepage .container .homepage-all .homepage-center {
-      width: 59%;
-      display: flex;
-      justify-content: center;
-      position: relative; }
-      @media (max-width: 1100px) {
-        .homepage .container .homepage-all .homepage-center {
-          width: 100%;
-          margin-bottom: 50px; } }
-      .homepage .container .homepage-all .homepage-center::before {
-        content: '';
-        position: absolute;
-        background-image: url(../../img/star.svg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 51px;
-        height: 61px;
-        top: -40px; }
-        @media (max-width: 768px) {
-          .homepage .container .homepage-all .homepage-center::before {
-            width: 22px;
-            height: 26px;
-            top: 0; } }
-      @media (max-width: 560px) {
-        .homepage .container .homepage-all .homepage-center .click {
-          width: 257px;
-          height: 204px; } }
-      .homepage .container .homepage-all .homepage-center .click #Yellow {
-        cursor: pointer; }
+        .homepage .container .homepage-all .homepage-left .title li {
+          max-width: 251px;
+          margin: 0 auto; }
+          .homepage .container .homepage-all .homepage-left .title li h2 {
+            font-family: 'TiemposHeadline-Light';
+            font-weight: 400;
+            font-size: 44px;
+            line-height: 49px;
+            text-align: center; }
+            @media (max-width: 1400px) {
+              .homepage .container .homepage-all .homepage-left .title li h2 {
+                font-size: 36px;
+                line-height: 40px; } }
+            @media (max-width: 768px) {
+              .homepage .container .homepage-all .homepage-left .title li h2 {
+                font-size: 32px;
+                line-height: 35px; } }
     .homepage .container .homepage-all .homepage-right {
-      width: 21%; }
+      width: 50%;
+      height: 100%; }
       @media (max-width: 1100px) {
         .homepage .container .homepage-all .homepage-right {
           width: 100%;
           margin: 0 auto; } }
       .homepage .container .homepage-all .homepage-right .title {
+        display: none;
         max-width: 257px;
         width: 100%; }
         @media (max-width: 1100px) {
@@ -1971,11 +1958,70 @@ footer .footer {
             .homepage .container .homepage-all .homepage-right .title h2 {
               font-size: 32px;
               line-height: 35px; } }
+      .homepage .container .homepage-all .homepage-right ul li.yellow-bg {
+        position: relative; }
+        .homepage .container .homepage-all .homepage-right ul li.yellow-bg span {
+          position: absolute;
+          background-image: url(../../img/yellow-man.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          bottom: 0px;
+          width: 372px;
+          height: 100%;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          top: 0; }
+      .homepage .container .homepage-all .homepage-right ul img {
+        max-height: 880px;
+        object-fit: cover;
+        display: flex; }
+  .homepage .container .homepage-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 226px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 588px; }
+    @media (max-width: 1100px) {
+      .homepage .container .homepage-center {
+        width: 100%;
+        margin-bottom: 50px; } }
+    .homepage .container .homepage-center::before {
+      content: '';
+      position: absolute;
+      background-image: url(../../img/star.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 51px;
+      height: 61px;
+      top: -40px; }
+      @media (max-width: 768px) {
+        .homepage .container .homepage-center::before {
+          width: 22px;
+          height: 26px;
+          top: 0; } }
+    @media (max-width: 560px) {
+      .homepage .container .homepage-center .click {
+        width: 257px;
+        height: 204px; } }
+    .homepage .container .homepage-center .click #Yellow {
+      cursor: pointer; }
 
-footer .footer {
-  padding-bottom: 30px;
-  text-align: center; }
-  footer .footer p {
-    display: block;
-    line-height: 14px;
-    letter-spacing: inherit; }
+footer {
+  position: relative; }
+  footer .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    text-align: center; }
+    footer .footer p {
+      display: block;
+      line-height: 14px;
+      letter-spacing: inherit; }

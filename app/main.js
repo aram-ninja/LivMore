@@ -5670,7 +5670,7 @@ $('.content_toggle li > a').click(function (e) {
 });
 
 var x, i, j, l, ll, selElmnt, a, b, c;
-/*look for any elements with the class "custom-select":*/
+
 x = document.getElementsByClassName('custom-select');
 l = x.length;
 for (i = 0; i < l; i++) {
@@ -5724,8 +5724,6 @@ for (i = 0; i < l; i++) {
   });
 }
 function closeAllSelect(elmnt) {
-  /*a function that will close all select boxes in the document,
-        except the current select box:*/
   var x,
     y,
     i,
@@ -5749,18 +5747,17 @@ function closeAllSelect(elmnt) {
     }
   }
 }
-/*if the user clicks anywhere outside the select box,
-      then close all select boxes:*/
-// document.addEventListener('click', closeAllSelect);
 
-// let product_colors = $('#product_colors');
+document.addEventListener('click', closeAllSelect);
 
-// product_colors.find('path[id]').click(function () {
-//   let pid = $(this).attr('id');
-//   product_colors.find('clipPath').attr('id');
+let product_colors = $('#product_colors');
 
-//   product_colors
-//     .find('#use_p')
-//     .attr('xlink:href', '#' + pid)
-//     .attr('clip-path', 'url(#' + pid + 'c)');
-// });
+product_colors.find('path[id]').click(function () {
+  let pid = $(this).attr('id');
+  product_colors.find('clipPath').attr('id');
+
+  product_colors
+    .find('#use_p')
+    .attr('xlink:href', '#' + pid)
+    .attr('clip-path', 'url(#' + pid + 'c)');
+});
